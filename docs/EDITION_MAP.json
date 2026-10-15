@@ -1,0 +1,20 @@
+{
+  "release": "v3.5.0-public-20261015",
+  "date": "2026-10-15",
+  "manuscript_editions": {
+    "chinese": "v3.5.0",
+    "english": "v2.1.0",
+    "jss_latex": "v2.1.0"
+  },
+  "frozen_evidence_baseline": "v3.4.1",
+  "new_experiments": false,
+  "baseline_doi": "10.5281/zenodo.23296795",
+  "current_release_doi": null,
+  "baseline_zip_identical_to_current": false,
+  "scientific_csv_files_unchanged": 17,
+  "original_analysis_modules_unchanged": 14,
+  "retained_numeric_values_checked": 104735,
+  "numeric_differences": 0,
+  "manuscript_originals_included": false,
+  "original_or_individual_review_records_included": false
+}

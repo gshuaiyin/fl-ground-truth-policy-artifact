@@ -1,0 +1,4925 @@
+{
+  "analysis_entity": "source_line",
+  "bootstrap_replicates": 20000,
+  "definitions": {
+    "exam_improvement": "deleted-only EXAM minus omission-aware EXAM; positive favors omission-aware",
+    "gmar_f_delta": "omission-aware GMAR-F minus deleted-only GMAR-F",
+    "mrr_delta": "omission-aware reciprocal rank minus deleted-only reciprocal rank",
+    "project_weighting": "bug-weighted results pool bugs; equal-project results average six project means"
+  },
+  "n_bugs": 395,
+  "projects": [
+    "Chart",
+    "Closure",
+    "Lang",
+    "Math",
+    "Mockito",
+    "Time"
+  ],
+  "by_formula": {
+    "ochiai": {
+      "all_projects_pooled": {
+        "bugs": 395,
+        "deleted_evaluable": 348,
+        "official_evaluable": 376,
+        "paired": 345,
+        "paired_omission": 217,
+        "evaluability_gain": 28,
+        "mrr_delta": {
+          "all_paired_bootstrap_95ci": [
+            -0.002692687771343269,
+            0.03535214113090982
+          ],
+          "all_paired_mean": 0.01614738661663967,
+          "omission_paired_bootstrap_95ci": [
+            0.0004431871020948175,
+            0.05873080141072004
+          ],
+          "omission_paired_mean": 0.029654945575253652
+        },
+        "exam_improvement": {
+          "all_paired_bootstrap_95ci": [
+            0.01622924330867229,
+            0.04342127222599287
+          ],
+          "all_paired_mean": 0.029133344761539417,
+          "omission_paired_bootstrap_95ci": [
+            0.026140114848639574,
+            0.06693086345280107
+          ],
+          "omission_paired_mean": 0.0454504398963595
+        },
+        "gmar_f_delta": {
+          "all_paired_bootstrap_95ci": [
+            0.018231885362051982,
+            0.06553219882822306
+          ],
+          "all_paired_mean": 0.04084049333884465,
+          "omission_paired_bootstrap_95ci": [
+            0.026640259160096963,
+            0.09855154883772843
+          ],
+          "omission_paired_mean": 0.06085524246489853
+        },
+        "topk": {
+          "1": {
+            "exact_sign_p": 0.34375,
+            "gains": 3,
+            "losses": 7,
+            "net": -4
+          },
+          "5": {
+            "exact_sign_p": 0.00017999112606048584,
+            "gains": 24,
+            "losses": 4,
+            "net": 20
+          },
+          "10": {
+            "exact_sign_p": 0.005222879350185394,
+            "gains": 23,
+            "losses": 7,
+            "net": 16
+          },
+          "20": {
+            "exact_sign_p": 0.00032491423189640045,
+            "gains": 25,
+            "losses": 5,
+            "net": 20
+          }
+        }
+      },
+      "by_project": {
+        "Chart": {
+          "bugs": 26,
+          "deleted_evaluable": 24,
+          "official_evaluable": 24,
+          "paired": 23,
+          "paired_omission": 12,
+          "evaluability_gain": 0,
+          "mrr_delta": {
+            "all_paired_bootstrap_95ci": [
+              0.0,
+              0.012973865644748226
+            ],
+            "all_paired_mean": 0.004761605010089779,
+            "omission_paired_bootstrap_95ci": [
+              0.0,
+              0.02327812518317508
+            ],
+            "omission_paired_mean": 0.009126409602672076
+          },
+          "exam_improvement": {
+            "all_paired_bootstrap_95ci": [
+              0.0,
+              0.07857304761444048
+            ],
+            "all_paired_mean": 0.02746978824999678,
+            "omission_paired_bootstrap_95ci": [
+              0.0,
+              0.14324540008454031
+            ],
+            "omission_paired_mean": 0.052650427479160496
+          },
+          "gmar_f_delta": {
+            "all_paired_bootstrap_95ci": [
+              -0.0006685147933483138,
+              0.19361583487172404
+            ],
+            "all_paired_mean": 0.07899636091461208,
+            "omission_paired_bootstrap_95ci": [
+              -8.940143241471336e-05,
+              0.35782235934502804
+            ],
+            "omission_paired_mean": 0.1512546532623697
+          },
+          "topk": {
+            "1": {
+              "exact_sign_p": 1.0,
+              "gains": 0,
+              "losses": 0,
+              "net": 0
+            },
+            "5": {
+              "exact_sign_p": 1.0,
+              "gains": 0,
+              "losses": 0,
+              "net": 0
+            },
+            "10": {
+              "exact_sign_p": 1.0,
+              "gains": 0,
+              "losses": 0,
+              "net": 0
+            },
+            "20": {
+              "exact_sign_p": 1.0,
+              "gains": 1,
+              "losses": 0,
+              "net": 1
+            }
+          }
+        },
+        "Closure": {
+          "bugs": 133,
+          "deleted_evaluable": 108,
+          "official_evaluable": 126,
+          "paired": 107,
+          "paired_omission": 71,
+          "evaluability_gain": 18,
+          "mrr_delta": {
+            "all_paired_bootstrap_95ci": [
+              -0.015409955184490565,
+              0.06551286322110521
+            ],
+            "all_paired_mean": 0.025368875699005044,
+            "omission_paired_bootstrap_95ci": [
+              -0.025830033586440076,
+              0.0947606006202097
+            ],
+            "omission_paired_mean": 0.03487665972004245
+          },
+          "exam_improvement": {
+            "all_paired_bootstrap_95ci": [
+              0.00412801720590025,
+              0.04968611741782894
+            ],
+            "all_paired_mean": 0.025038655261069992,
+            "omission_paired_bootstrap_95ci": [
+              0.008470943395184295,
+              0.06841047987936925
+            ],
+            "omission_paired_mean": 0.03468017836436642
+          },
+          "gmar_f_delta": {
+            "all_paired_bootstrap_95ci": [
+              -0.0019475079907617866,
+              0.08330512029058608
+            ],
+            "all_paired_mean": 0.03701532322390592,
+            "omission_paired_bootstrap_95ci": [
+              -0.008209623248317609,
+              0.10848959427606708
+            ],
+            "omission_paired_mean": 0.044708119657429664
+          },
+          "topk": {
+            "1": {
+              "exact_sign_p": 1.0,
+              "gains": 2,
+              "losses": 2,
+              "net": 0
+            },
+            "5": {
+              "exact_sign_p": 0.109375,
+              "gains": 8,
+              "losses": 2,
+              "net": 6
+            },
+            "10": {
+              "exact_sign_p": 0.0224609375,
+              "gains": 11,
+              "losses": 2,
+              "net": 9
+            },
+            "20": {
+              "exact_sign_p": 0.012725830078125,
+              "gains": 14,
+              "losses": 3,
+              "net": 11
+            }
+          }
+        },
+        "Lang": {
+          "bugs": 65,
+          "deleted_evaluable": 56,
+          "official_evaluable": 59,
+          "paired": 55,
+          "paired_omission": 39,
+          "evaluability_gain": 3,
+          "mrr_delta": {
+            "all_paired_bootstrap_95ci": [
+              -0.03767122202792295,
+              0.014601456993787468
+            ],
+            "all_paired_mean": -0.006293574117864602,
+            "omission_paired_bootstrap_95ci": [
+              -0.05128919832014398,
+              0.0223084596855086
+            ],
+            "omission_paired_mean": -0.006903166655371185
+          },
+          "exam_improvement": {
+            "all_paired_bootstrap_95ci": [
+              -0.0020992444364565798,
+              0.02891801774770228
+            ],
+            "all_paired_mean": 0.00912373638588727,
+            "omission_paired_bootstrap_95ci": [
+              -0.0025920360858577973,
+              0.04051111931200062
+            ],
+            "omission_paired_mean": 0.013166029746428049
+          },
+          "gmar_f_delta": {
+            "all_paired_bootstrap_95ci": [
+              -0.04873310156795755,
+              0.009218527784777037
+            ],
+            "all_paired_mean": -0.018787567879839796,
+            "omission_paired_bootstrap_95ci": [
+              -0.07067805203318703,
+              0.010287767620261937
+            ],
+            "omission_paired_mean": -0.02846573140305241
+          },
+          "topk": {
+            "1": {
+              "exact_sign_p": 1.0,
+              "gains": 0,
+              "losses": 1,
+              "net": -1
+            },
+            "5": {
+              "exact_sign_p": 0.25,
+              "gains": 3,
+              "losses": 0,
+              "net": 3
+            },
+            "10": {
+              "exact_sign_p": 1.0,
+              "gains": 0,
+              "losses": 1,
+              "net": -1
+            },
+            "20": {
+              "exact_sign_p": 1.0,
+              "gains": 0,
+              "losses": 0,
+              "net": 0
+            }
+          }
+        },
+        "Math": {
+          "bugs": 106,
+          "deleted_evaluable": 100,
+          "official_evaluable": 104,
+          "paired": 100,
+          "paired_omission": 51,
+          "evaluability_gain": 4,
+          "mrr_delta": {
+            "all_paired_bootstrap_95ci": [
+              -0.007322902941799464,
+              0.06330237029266993
+            ],
+            "all_paired_mean": 0.027649359918437,
+            "omission_paired_bootstrap_95ci": [
+              0.02472776120954091,
+              0.1319621027003289
+            ],
+            "omission_paired_mean": 0.07330522607318536
+          },
+          "exam_improvement": {
+            "all_paired_bootstrap_95ci": [
+              0.011078086563306723,
+              0.06423053387472588
+            ],
+            "all_paired_mean": 0.03529687342258037,
+            "omission_paired_bootstrap_95ci": [
+              0.02334594935082706,
+              0.12515175328094502
+            ],
+            "omission_paired_mean": 0.0694569841527501
+          },
+          "gmar_f_delta": {
+            "all_paired_bootstrap_95ci": [
+              0.010384333087775692,
+              0.10334935922259346
+            ],
+            "all_paired_mean": 0.0530280653901197,
+            "omission_paired_bootstrap_95ci": [
+              0.027478836448552785,
+              0.19980960167503958
+            ],
+            "omission_paired_mean": 0.10784043415241192
+          },
+          "topk": {
+            "1": {
+              "exact_sign_p": 1.0,
+              "gains": 1,
+              "losses": 1,
+              "net": 0
+            },
+            "5": {
+              "exact_sign_p": 0.125,
+              "gains": 6,
+              "losses": 1,
+              "net": 5
+            },
+            "10": {
+              "exact_sign_p": 0.453125,
+              "gains": 5,
+              "losses": 2,
+              "net": 3
+            },
+            "20": {
+              "exact_sign_p": 0.2890625,
+              "gains": 6,
+              "losses": 2,
+              "net": 4
+            }
+          }
+        },
+        "Mockito": {
+          "bugs": 38,
+          "deleted_evaluable": 34,
+          "official_evaluable": 37,
+          "paired": 34,
+          "paired_omission": 22,
+          "evaluability_gain": 3,
+          "mrr_delta": {
+            "all_paired_bootstrap_95ci": [
+              -0.018546020249296497,
+              0.0814464228618128
+            ],
+            "all_paired_mean": 0.02959976957534886,
+            "omission_paired_bootstrap_95ci": [
+              -0.02724547604848051,
+              0.12593451393730978
+            ],
+            "omission_paired_mean": 0.04810637352317787
+          },
+          "exam_improvement": {
+            "all_paired_bootstrap_95ci": [
+              0.002495822761348791,
+              0.1401842587521077
+            ],
+            "all_paired_mean": 0.06305121070178597,
+            "omission_paired_bootstrap_95ci": [
+              0.004783729270372238,
+              0.19692069696082226
+            ],
+            "omission_paired_mean": 0.09763807360386355
+          },
+          "gmar_f_delta": {
+            "all_paired_bootstrap_95ci": [
+              0.011127135825849524,
+              0.20155958999991755
+            ],
+            "all_paired_mean": 0.0954628024337107,
+            "omission_paired_bootstrap_95ci": [
+              0.019387112141038408,
+              0.29596932893024186
+            ],
+            "omission_paired_mean": 0.1477483028478071
+          },
+          "topk": {
+            "1": {
+              "exact_sign_p": 1.0,
+              "gains": 0,
+              "losses": 0,
+              "net": 0
+            },
+            "5": {
+              "exact_sign_p": 0.375,
+              "gains": 4,
+              "losses": 1,
+              "net": 3
+            },
+            "10": {
+              "exact_sign_p": 0.6875,
+              "gains": 4,
+              "losses": 2,
+              "net": 2
+            },
+            "20": {
+              "exact_sign_p": 0.25,
+              "gains": 3,
+              "losses": 0,
+              "net": 3
+            }
+          }
+        },
+        "Time": {
+          "bugs": 27,
+          "deleted_evaluable": 26,
+          "official_evaluable": 26,
+          "paired": 26,
+          "paired_omission": 22,
+          "evaluability_gain": 0,
+          "mrr_delta": {
+            "all_paired_bootstrap_95ci": [
+              -0.12644577644577645,
+              0.06796686033701493
+            ],
+            "all_paired_mean": -0.026089223584920235,
+            "omission_paired_bootstrap_95ci": [
+              -0.14920634920634923,
+              0.08191463913389047
+            ],
+            "omission_paired_mean": -0.030832718782178463
+          },
+          "exam_improvement": {
+            "all_paired_bootstrap_95ci": [
+              -0.00028453028453028455,
+              0.06491282810262693
+            ],
+            "all_paired_mean": 0.021724180488620133,
+            "omission_paired_bootstrap_95ci": [
+              -0.00035405220631037676,
+              0.07666749331133786
+            ],
+            "omission_paired_mean": 0.025674031486551063
+          },
+          "gmar_f_delta": {
+            "all_paired_bootstrap_95ci": [
+              -0.03488663000061172,
+              0.11951749380531769
+            ],
+            "all_paired_mean": 0.030661104905401897,
+            "omission_paired_bootstrap_95ci": [
+              -0.04991367163096506,
+              0.12870895948992403
+            ],
+            "omission_paired_mean": 0.026186090925059954
+          },
+          "topk": {
+            "1": {
+              "exact_sign_p": 0.25,
+              "gains": 0,
+              "losses": 3,
+              "net": -3
+            },
+            "5": {
+              "exact_sign_p": 0.25,
+              "gains": 3,
+              "losses": 0,
+              "net": 3
+            },
+            "10": {
+              "exact_sign_p": 0.25,
+              "gains": 3,
+              "losses": 0,
+              "net": 3
+            },
+            "20": {
+              "exact_sign_p": 1.0,
+              "gains": 1,
+              "losses": 0,
+              "net": 1
+            }
+          }
+        }
+      },
+      "equal_project_weighted": {
+        "mrr_delta": {
+          "all_paired_bootstrap_95ci": [
+            -0.012262370883094634,
+            0.02950252465871607
+          ],
+          "all_paired_mean": 0.00916613541668264,
+          "all_paired_project_means": {
+            "Chart": 0.004761605010089779,
+            "Closure": 0.025368875699005044,
+            "Lang": -0.006293574117864602,
+            "Math": 0.027649359918437,
+            "Mockito": 0.02959976957534886,
+            "Time": -0.026089223584920235
+          },
+          "omission_paired_bootstrap_95ci": [
+            -0.006496067881953153,
+            0.048935054758386005
+          ],
+          "omission_paired_mean": 0.02127979724692135,
+          "omission_paired_project_means": {
+            "Chart": 0.009126409602672076,
+            "Closure": 0.03487665972004245,
+            "Lang": -0.006903166655371185,
+            "Math": 0.07330522607318536,
+            "Mockito": 0.04810637352317787,
+            "Time": -0.030832718782178463
+          }
+        },
+        "exam_improvement": {
+          "all_paired_bootstrap_95ci": [
+            0.015172857584721961,
+            0.0475838950534729
+          ],
+          "all_paired_mean": 0.030284074084990086,
+          "all_paired_project_means": {
+            "Chart": 0.02746978824999678,
+            "Closure": 0.025038655261069992,
+            "Lang": 0.00912373638588727,
+            "Math": 0.03529687342258037,
+            "Mockito": 0.06305121070178597,
+            "Time": 0.021724180488620133
+          },
+          "omission_paired_bootstrap_95ci": [
+            0.025391263551666786,
+            0.07600840199335819
+          ],
+          "omission_paired_mean": 0.048877620805519946,
+          "omission_paired_project_means": {
+            "Chart": 0.052650427479160496,
+            "Closure": 0.03468017836436642,
+            "Lang": 0.013166029746428049,
+            "Math": 0.0694569841527501,
+            "Mockito": 0.09763807360386355,
+            "Time": 0.025674031486551063
+          }
+        },
+        "gmar_f_delta": {
+          "all_paired_bootstrap_95ci": [
+            0.019372483191078614,
+            0.07580423998025371
+          ],
+          "all_paired_mean": 0.046062681497985085,
+          "all_paired_project_means": {
+            "Chart": 0.07899636091461208,
+            "Closure": 0.03701532322390592,
+            "Lang": -0.018787567879839796,
+            "Math": 0.0530280653901197,
+            "Mockito": 0.0954628024337107,
+            "Time": 0.030661104905401897
+          },
+          "omission_paired_bootstrap_95ci": [
+            0.03254746023239553,
+            0.12220022122181688
+          ],
+          "omission_paired_mean": 0.07487864490700433,
+          "omission_paired_project_means": {
+            "Chart": 0.1512546532623697,
+            "Closure": 0.044708119657429664,
+            "Lang": -0.02846573140305241,
+            "Math": 0.10784043415241192,
+            "Mockito": 0.1477483028478071,
+            "Time": 0.026186090925059954
+          }
+        }
+      },
+      "leave_one_project_out": {
+        "Chart": {
+          "bugs": 369,
+          "deleted_evaluable": 324,
+          "official_evaluable": 352,
+          "paired": 322,
+          "paired_omission": 205,
+          "evaluability_gain": 28,
+          "mrr_delta": {
+            "all_paired_bootstrap_95ci": [
+              -0.00311926172001327,
+              0.037058741873808546
+            ],
+            "all_paired_mean": 0.016960656731393235,
+            "omission_paired_bootstrap_95ci": [
+              0.0009361773241283557,
+              0.060915084923371006
+            ],
+            "omission_paired_mean": 0.030856615973648673
+          },
+          "exam_improvement": {
+            "all_paired_bootstrap_95ci": [
+              0.016035299510804436,
+              0.04404070089481524
+            ],
+            "all_paired_mean": 0.029252170226649606,
+            "omission_paired_bootstrap_95ci": [
+              0.02518260187189476,
+              0.06717028260097649
+            ],
+            "omission_paired_mean": 0.045028977208585785
+          },
+          "gmar_f_delta": {
+            "all_paired_bootstrap_95ci": [
+              0.014885124218512267,
+              0.06333839526039517
+            ],
+            "all_paired_mean": 0.03811507422628984,
+            "omission_paired_bootstrap_95ci": [
+              0.020831039868641165,
+              0.09278986220157252
+            ],
+            "omission_paired_mean": 0.05556356963772949
+          },
+          "topk": {
+            "1": {
+              "exact_sign_p": 0.34375,
+              "gains": 3,
+              "losses": 7,
+              "net": -4
+            },
+            "5": {
+              "exact_sign_p": 0.00017999112606048584,
+              "gains": 24,
+              "losses": 4,
+              "net": 20
+            },
+            "10": {
+              "exact_sign_p": 0.005222879350185394,
+              "gains": 23,
+              "losses": 7,
+              "net": 16
+            },
+            "20": {
+              "exact_sign_p": 0.0005461126565933228,
+              "gains": 24,
+              "losses": 5,
+              "net": 19
+            }
+          }
+        },
+        "Closure": {
+          "bugs": 262,
+          "deleted_evaluable": 240,
+          "official_evaluable": 250,
+          "paired": 238,
+          "paired_omission": 146,
+          "evaluability_gain": 10,
+          "mrr_delta": {
+            "all_paired_bootstrap_95ci": [
+              -0.0087783252990584,
+              0.03256827844939045
+            ],
+            "all_paired_mean": 0.012001591104819945,
+            "omission_paired_bootstrap_95ci": [
+              -0.0029693612510905704,
+              0.05839372800656855
+            ],
+            "omission_paired_mean": 0.027115618833609786
+          },
+          "exam_improvement": {
+            "all_paired_bootstrap_95ci": [
+              0.015580531334285863,
+              0.048414689129673776
+            ],
+            "all_paired_mean": 0.030974234578977352,
+            "omission_paired_bootstrap_95ci": [
+              0.0259032440141436,
+              0.07869525488653725
+            ],
+            "omission_paired_mean": 0.05068803283315066
+          },
+          "gmar_f_delta": {
+            "all_paired_bootstrap_95ci": [
+              0.016402701120357858,
+              0.07169298542080489
+            ],
+            "all_paired_mean": 0.042560212676233077,
+            "omission_paired_bootstrap_95ci": [
+              0.025448489434747992,
+              0.11614413629660737
+            ],
+            "omission_paired_mean": 0.06870761040551696
+          },
+          "topk": {
+            "1": {
+              "exact_sign_p": 0.21875,
+              "gains": 1,
+              "losses": 5,
+              "net": -4
+            },
+            "5": {
+              "exact_sign_p": 0.001312255859375,
+              "gains": 16,
+              "losses": 2,
+              "net": 14
+            },
+            "10": {
+              "exact_sign_p": 0.143463134765625,
+              "gains": 12,
+              "losses": 5,
+              "net": 7
+            },
+            "20": {
+              "exact_sign_p": 0.0224609375,
+              "gains": 11,
+              "losses": 2,
+              "net": 9
+            }
+          }
+        },
+        "Lang": {
+          "bugs": 330,
+          "deleted_evaluable": 292,
+          "official_evaluable": 317,
+          "paired": 290,
+          "paired_omission": 178,
+          "evaluability_gain": 25,
+          "mrr_delta": {
+            "all_paired_bootstrap_95ci": [
+              -0.001690082277026383,
+              0.04241996894880972
+            ],
+            "all_paired_mean": 0.02040343089387324,
+            "omission_paired_bootstrap_95ci": [
+              0.004477027490567543,
+              0.07144636770269842
+            ],
+            "omission_paired_mean": 0.03766486904151415
+          },
+          "exam_improvement": {
+            "all_paired_bootstrap_95ci": [
+              0.018102784499815158,
+              0.04926798591672563
+            ],
+            "all_paired_mean": 0.032928270487956206,
+            "omission_paired_bootstrap_95ci": [
+              0.0298100919595475,
+              0.07802716240191307
+            ],
+            "omission_paired_mean": 0.05252399043482763
+          },
+          "gmar_f_delta": {
+            "all_paired_bootstrap_95ci": [
+              0.026251487092034925,
+              0.0809829255208536
+            ],
+            "all_paired_mean": 0.052149263569974465,
+            "omission_paired_bootstrap_95ci": [
+              0.04017361455382594,
+              0.12483442020375611
+            ],
+            "omission_paired_mean": 0.08042556820001139
+          },
+          "topk": {
+            "1": {
+              "exact_sign_p": 0.5078125,
+              "gains": 3,
+              "losses": 6,
+              "net": -3
+            },
+            "5": {
+              "exact_sign_p": 0.0009105205535888672,
+              "gains": 21,
+              "losses": 4,
+              "net": 17
+            },
+            "10": {
+              "exact_sign_p": 0.002315700054168701,
+              "gains": 23,
+              "losses": 6,
+              "net": 17
+            },
+            "20": {
+              "exact_sign_p": 0.00032491423189640045,
+              "gains": 25,
+              "losses": 5,
+              "net": 20
+            }
+          }
+        },
+        "Math": {
+          "bugs": 289,
+          "deleted_evaluable": 248,
+          "official_evaluable": 272,
+          "paired": 245,
+          "paired_omission": 166,
+          "evaluability_gain": 24,
+          "mrr_delta": {
+            "all_paired_bootstrap_95ci": [
+              -0.011322378869782813,
+              0.03402232842658906
+            ],
+            "all_paired_mean": 0.01145270363631423,
+            "omission_paired_bootstrap_95ci": [
+              -0.017051466758064696,
+              0.04930717559504034
+            ],
+            "omission_paired_mean": 0.016244317229503553
+          },
+          "exam_improvement": {
+            "all_paired_bootstrap_95ci": [
+              0.012089664705062123,
+              0.043145075539808495
+            ],
+            "all_paired_mean": 0.026617618777441066,
+            "omission_paired_bootstrap_95ci": [
+              0.018171214878003678,
+              0.06107475293181353
+            ],
+            "omission_paired_mean": 0.03807493533566119
+          },
+          "gmar_f_delta": {
+            "all_paired_bootstrap_95ci": [
+              0.00955352574794763,
+              0.06463058032269234
+            ],
+            "all_paired_mean": 0.0358659741342426,
+            "omission_paired_bootstrap_95ci": [
+              0.010557375444874742,
+              0.08774015014231062
+            ],
+            "omission_paired_mean": 0.04642003297054201
+          },
+          "topk": {
+            "1": {
+              "exact_sign_p": 0.2890625,
+              "gains": 2,
+              "losses": 6,
+              "net": -4
+            },
+            "5": {
+              "exact_sign_p": 0.0014896392822265625,
+              "gains": 18,
+              "losses": 3,
+              "net": 15
+            },
+            "10": {
+              "exact_sign_p": 0.010622024536132812,
+              "gains": 18,
+              "losses": 5,
+              "net": 13
+            },
+            "20": {
+              "exact_sign_p": 0.0008554458618164062,
+              "gains": 19,
+              "losses": 3,
+              "net": 16
+            }
+          }
+        },
+        "Mockito": {
+          "bugs": 357,
+          "deleted_evaluable": 314,
+          "official_evaluable": 339,
+          "paired": 311,
+          "paired_omission": 195,
+          "evaluability_gain": 25,
+          "mrr_delta": {
+            "all_paired_bootstrap_95ci": [
+              -0.005758921814022673,
+              0.03502304667915831
+            ],
+            "all_paired_mean": 0.014676708093822589,
+            "omission_paired_bootstrap_95ci": [
+              -0.00316003359735194,
+              0.05773359886816474
+            ],
+            "omission_paired_mean": 0.0275732460118981
+          },
+          "exam_improvement": {
+            "all_paired_bootstrap_95ci": [
+              0.013314086485777464,
+              0.039375476181504214
+            ],
+            "all_paired_mean": 0.025425282247171627,
+            "omission_paired_bootstrap_95ci": [
+              0.021002799418704303,
+              0.06041629546773485
+            ],
+            "omission_paired_mean": 0.039562604298589814
+          },
+          "gmar_f_delta": {
+            "all_paired_bootstrap_95ci": [
+              0.011853402819983061,
+              0.05937700530789693
+            ],
+            "all_paired_mean": 0.034868922569631,
+            "omission_paired_bootstrap_95ci": [
+              0.01638440939693326,
+              0.08842767130840318
+            ],
+            "omission_paired_mean": 0.051051922831955004
+          },
+          "topk": {
+            "1": {
+              "exact_sign_p": 0.34375,
+              "gains": 3,
+              "losses": 7,
+              "net": -4
+            },
+            "5": {
+              "exact_sign_p": 0.00048828125,
+              "gains": 20,
+              "losses": 3,
+              "net": 17
+            },
+            "10": {
+              "exact_sign_p": 0.006610751152038574,
+              "gains": 19,
+              "losses": 5,
+              "net": 14
+            },
+            "20": {
+              "exact_sign_p": 0.0015137195587158203,
+              "gains": 22,
+              "losses": 5,
+              "net": 17
+            }
+          }
+        },
+        "Time": {
+          "bugs": 368,
+          "deleted_evaluable": 322,
+          "official_evaluable": 350,
+          "paired": 319,
+          "paired_omission": 195,
+          "evaluability_gain": 28,
+          "mrr_delta": {
+            "all_paired_bootstrap_95ci": [
+              0.0011035658580390948,
+              0.038282532554178544
+            ],
+            "all_paired_mean": 0.019589868952816968,
+            "omission_paired_bootstrap_95ci": [
+              0.008190109656483507,
+              0.06552333432384594
+            ],
+            "omission_paired_mean": 0.0364791948873742
+          },
+          "exam_improvement": {
+            "all_paired_bootstrap_95ci": [
+              0.01628791159692203,
+              0.044662140208155794
+            ],
+            "all_paired_mean": 0.029737226489112777,
+            "omission_paired_bootstrap_95ci": [
+              0.02716163690437047,
+              0.0707923791841534
+            ],
+            "omission_paired_mean": 0.047681624434901995
+          },
+          "gmar_f_delta": {
+            "all_paired_bootstrap_95ci": [
+              0.018083244838716515,
+              0.06711250902840239
+            ],
+            "all_paired_mean": 0.04167016136163309,
+            "omission_paired_bootstrap_95ci": [
+              0.028174202984896132,
+              0.10451493450061204
+            ],
+            "omission_paired_mean": 0.06476663392067519
+          },
+          "topk": {
+            "1": {
+              "exact_sign_p": 1.0,
+              "gains": 3,
+              "losses": 4,
+              "net": -1
+            },
+            "5": {
+              "exact_sign_p": 0.0009105205535888672,
+              "gains": 21,
+              "losses": 4,
+              "net": 17
+            },
+            "10": {
+              "exact_sign_p": 0.0191572904586792,
+              "gains": 20,
+              "losses": 7,
+              "net": 13
+            },
+            "20": {
+              "exact_sign_p": 0.0005461126565933228,
+              "gains": 24,
+              "losses": 5,
+              "net": 19
+            }
+          }
+        }
+      },
+      "topk_dominance": {
+        "1": {
+          "by_project": {
+            "Chart": {
+              "gains": 0,
+              "losses": 0,
+              "net": 0
+            },
+            "Closure": {
+              "gains": 2,
+              "losses": 2,
+              "net": 0
+            },
+            "Lang": {
+              "gains": 0,
+              "losses": 1,
+              "net": -1
+            },
+            "Math": {
+              "gains": 1,
+              "losses": 1,
+              "net": 0
+            },
+            "Mockito": {
+              "gains": 0,
+              "losses": 0,
+              "net": 0
+            },
+            "Time": {
+              "gains": 0,
+              "losses": 3,
+              "net": -3
+            }
+          },
+          "largest_discordant_project": "Closure",
+          "largest_discordant_share": 0.4,
+          "largest_gain_project": "Closure",
+          "largest_gain_share": 0.6666666666666666,
+          "largest_positive_net_project": "Chart",
+          "largest_positive_net_share": 0.0,
+          "largest_net_over_total_net": -0.0,
+          "positive_net_total": 0,
+          "total_discordant": 10,
+          "total_gains": 3,
+          "total_losses": 7,
+          "total_net": -4
+        },
+        "5": {
+          "by_project": {
+            "Chart": {
+              "gains": 0,
+              "losses": 0,
+              "net": 0
+            },
+            "Closure": {
+              "gains": 8,
+              "losses": 2,
+              "net": 6
+            },
+            "Lang": {
+              "gains": 3,
+              "losses": 0,
+              "net": 3
+            },
+            "Math": {
+              "gains": 6,
+              "losses": 1,
+              "net": 5
+            },
+            "Mockito": {
+              "gains": 4,
+              "losses": 1,
+              "net": 3
+            },
+            "Time": {
+              "gains": 3,
+              "losses": 0,
+              "net": 3
+            }
+          },
+          "largest_discordant_project": "Closure",
+          "largest_discordant_share": 0.35714285714285715,
+          "largest_gain_project": "Closure",
+          "largest_gain_share": 0.3333333333333333,
+          "largest_positive_net_project": "Closure",
+          "largest_positive_net_share": 0.3,
+          "largest_net_over_total_net": 0.3,
+          "positive_net_total": 20,
+          "total_discordant": 28,
+          "total_gains": 24,
+          "total_losses": 4,
+          "total_net": 20
+        },
+        "10": {
+          "by_project": {
+            "Chart": {
+              "gains": 0,
+              "losses": 0,
+              "net": 0
+            },
+            "Closure": {
+              "gains": 11,
+              "losses": 2,
+              "net": 9
+            },
+            "Lang": {
+              "gains": 0,
+              "losses": 1,
+              "net": -1
+            },
+            "Math": {
+              "gains": 5,
+              "losses": 2,
+              "net": 3
+            },
+            "Mockito": {
+              "gains": 4,
+              "losses": 2,
+              "net": 2
+            },
+            "Time": {
+              "gains": 3,
+              "losses": 0,
+              "net": 3
+            }
+          },
+          "largest_discordant_project": "Closure",
+          "largest_discordant_share": 0.43333333333333335,
+          "largest_gain_project": "Closure",
+          "largest_gain_share": 0.4782608695652174,
+          "largest_positive_net_project": "Closure",
+          "largest_positive_net_share": 0.5294117647058824,
+          "largest_net_over_total_net": 0.5625,
+          "positive_net_total": 17,
+          "total_discordant": 30,
+          "total_gains": 23,
+          "total_losses": 7,
+          "total_net": 16
+        },
+        "20": {
+          "by_project": {
+            "Chart": {
+              "gains": 1,
+              "losses": 0,
+              "net": 1
+            },
+            "Closure": {
+              "gains": 14,
+              "losses": 3,
+              "net": 11
+            },
+            "Lang": {
+              "gains": 0,
+              "losses": 0,
+              "net": 0
+            },
+            "Math": {
+              "gains": 6,
+              "losses": 2,
+              "net": 4
+            },
+            "Mockito": {
+              "gains": 3,
+              "losses": 0,
+              "net": 3
+            },
+            "Time": {
+              "gains": 1,
+              "losses": 0,
+              "net": 1
+            }
+          },
+          "largest_discordant_project": "Closure",
+          "largest_discordant_share": 0.5666666666666667,
+          "largest_gain_project": "Closure",
+          "largest_gain_share": 0.56,
+          "largest_positive_net_project": "Closure",
+          "largest_positive_net_share": 0.55,
+          "largest_net_over_total_net": 0.55,
+          "positive_net_total": 20,
+          "total_discordant": 30,
+          "total_gains": 25,
+          "total_losses": 5,
+          "total_net": 20
+        }
+      },
+      "lopo_direction_summary": {
+        "mrr_delta": {
+          "all_paired": {
+            "all_nonnegative": true,
+            "maximum": 0.02040343089387324,
+            "minimum": 0.01145270363631423
+          },
+          "omission_paired": {
+            "all_nonnegative": true,
+            "maximum": 0.03766486904151415,
+            "minimum": 0.016244317229503553
+          }
+        },
+        "exam_improvement": {
+          "all_paired": {
+            "all_nonnegative": true,
+            "maximum": 0.032928270487956206,
+            "minimum": 0.025425282247171627
+          },
+          "omission_paired": {
+            "all_nonnegative": true,
+            "maximum": 0.05252399043482763,
+            "minimum": 0.03807493533566119
+          }
+        },
+        "gmar_f_delta": {
+          "all_paired": {
+            "all_nonnegative": true,
+            "maximum": 0.052149263569974465,
+            "minimum": 0.034868922569631
+          },
+          "omission_paired": {
+            "all_nonnegative": true,
+            "maximum": 0.08042556820001139,
+            "minimum": 0.04642003297054201
+          }
+        }
+      }
+    },
+    "dstar": {
+      "all_projects_pooled": {
+        "bugs": 395,
+        "deleted_evaluable": 348,
+        "official_evaluable": 376,
+        "paired": 345,
+        "paired_omission": 217,
+        "evaluability_gain": 28,
+        "mrr_delta": {
+          "all_paired_bootstrap_95ci": [
+            -0.003178223912638464,
+            0.035231037045528275
+          ],
+          "all_paired_mean": 0.015872409863744427,
+          "omission_paired_bootstrap_95ci": [
+            0.0008526982945976304,
+            0.05816988748838783
+          ],
+          "omission_paired_mean": 0.029217770553369514
+        },
+        "exam_improvement": {
+          "all_paired_bootstrap_95ci": [
+            0.016630451258793887,
+            0.04352149836119728
+          ],
+          "all_paired_mean": 0.02931021989857517,
+          "omission_paired_bootstrap_95ci": [
+            0.02652930264828574,
+            0.06761500468313568
+          ],
+          "omission_paired_mean": 0.04573164691146243
+        },
+        "gmar_f_delta": {
+          "all_paired_bootstrap_95ci": [
+            0.018514268085380124,
+            0.0654026974031915
+          ],
+          "all_paired_mean": 0.04113294219411366,
+          "omission_paired_bootstrap_95ci": [
+            0.02727540201377272,
+            0.09868515764797825
+          ],
+          "omission_paired_mean": 0.06138733436085039
+        },
+        "topk": {
+          "1": {
+            "exact_sign_p": 0.34375,
+            "gains": 3,
+            "losses": 7,
+            "net": -4
+          },
+          "5": {
+            "exact_sign_p": 0.000310748815536499,
+            "gains": 23,
+            "losses": 4,
+            "net": 19
+          },
+          "10": {
+            "exact_sign_p": 0.003326892852783203,
+            "gains": 24,
+            "losses": 7,
+            "net": 17
+          },
+          "20": {
+            "exact_sign_p": 0.0005461126565933228,
+            "gains": 24,
+            "losses": 5,
+            "net": 19
+          }
+        }
+      },
+      "by_project": {
+        "Chart": {
+          "bugs": 26,
+          "deleted_evaluable": 24,
+          "official_evaluable": 24,
+          "paired": 23,
+          "paired_omission": 12,
+          "evaluability_gain": 0,
+          "mrr_delta": {
+            "all_paired_bootstrap_95ci": [
+              0.0,
+              0.012973865644748226
+            ],
+            "all_paired_mean": 0.004761605010089779,
+            "omission_paired_bootstrap_95ci": [
+              0.0,
+              0.024866575819100765
+            ],
+            "omission_paired_mean": 0.009126409602672076
+          },
+          "exam_improvement": {
+            "all_paired_bootstrap_95ci": [
+              0.0,
+              0.07857304761444048
+            ],
+            "all_paired_mean": 0.02746978824999678,
+            "omission_paired_bootstrap_95ci": [
+              0.0,
+              0.15059834126101088
+            ],
+            "omission_paired_mean": 0.052650427479160496
+          },
+          "gmar_f_delta": {
+            "all_paired_bootstrap_95ci": [
+              -0.0002305766300594314,
+              0.1943788719996671
+            ],
+            "all_paired_mean": 0.079646738331444,
+            "omission_paired_bootstrap_95ci": [
+              0.00023451006340471925,
+              0.35572675542034665
+            ],
+            "omission_paired_mean": 0.15250120997796424
+          },
+          "topk": {
+            "1": {
+              "exact_sign_p": 1.0,
+              "gains": 0,
+              "losses": 0,
+              "net": 0
+            },
+            "5": {
+              "exact_sign_p": 1.0,
+              "gains": 0,
+              "losses": 0,
+              "net": 0
+            },
+            "10": {
+              "exact_sign_p": 1.0,
+              "gains": 0,
+              "losses": 0,
+              "net": 0
+            },
+            "20": {
+              "exact_sign_p": 1.0,
+              "gains": 1,
+              "losses": 0,
+              "net": 1
+            }
+          }
+        },
+        "Closure": {
+          "bugs": 133,
+          "deleted_evaluable": 108,
+          "official_evaluable": 126,
+          "paired": 107,
+          "paired_omission": 71,
+          "evaluability_gain": 18,
+          "mrr_delta": {
+            "all_paired_bootstrap_95ci": [
+              -0.015460124219647415,
+              0.06466830674028204
+            ],
+            "all_paired_mean": 0.024080880618211363,
+            "omission_paired_bootstrap_95ci": [
+              -0.026559371145218332,
+              0.09332297569323643
+            ],
+            "omission_paired_mean": 0.03293559671095902
+          },
+          "exam_improvement": {
+            "all_paired_bootstrap_95ci": [
+              0.005115787963429024,
+              0.05108817333412252
+            ],
+            "all_paired_mean": 0.025824732398991048,
+            "omission_paired_bootstrap_95ci": [
+              0.009315897766676632,
+              0.06834958257783251
+            ],
+            "omission_paired_mean": 0.03586482982574041
+          },
+          "gmar_f_delta": {
+            "all_paired_bootstrap_95ci": [
+              -0.001719869508600643,
+              0.08286395898807303
+            ],
+            "all_paired_mean": 0.037715661614033884,
+            "omission_paired_bootstrap_95ci": [
+              -0.006576965331356278,
+              0.10764262623209628
+            ],
+            "omission_paired_mean": 0.04596392461560469
+          },
+          "topk": {
+            "1": {
+              "exact_sign_p": 1.0,
+              "gains": 2,
+              "losses": 2,
+              "net": 0
+            },
+            "5": {
+              "exact_sign_p": 0.109375,
+              "gains": 8,
+              "losses": 2,
+              "net": 6
+            },
+            "10": {
+              "exact_sign_p": 0.0224609375,
+              "gains": 11,
+              "losses": 2,
+              "net": 9
+            },
+            "20": {
+              "exact_sign_p": 0.03515625,
+              "gains": 12,
+              "losses": 3,
+              "net": 9
+            }
+          }
+        },
+        "Lang": {
+          "bugs": 65,
+          "deleted_evaluable": 56,
+          "official_evaluable": 59,
+          "paired": 55,
+          "paired_omission": 39,
+          "evaluability_gain": 3,
+          "mrr_delta": {
+            "all_paired_bootstrap_95ci": [
+              -0.03823340910297432,
+              0.014071214281285452
+            ],
+            "all_paired_mean": -0.006695345104199766,
+            "omission_paired_bootstrap_95ci": [
+              -0.051312477086231816,
+              0.0218042799375804
+            ],
+            "omission_paired_mean": -0.00746976676430539
+          },
+          "exam_improvement": {
+            "all_paired_bootstrap_95ci": [
+              -0.0021862126570949517,
+              0.028224885232586552
+            ],
+            "all_paired_mean": 0.008851642514156538,
+            "omission_paired_bootstrap_95ci": [
+              -0.0027432625463558306,
+              0.040253243652821076
+            ],
+            "omission_paired_mean": 0.0127823076196283
+          },
+          "gmar_f_delta": {
+            "all_paired_bootstrap_95ci": [
+              -0.05025725385708657,
+              0.008410124608273612
+            ],
+            "all_paired_mean": -0.020066516509730997,
+            "omission_paired_bootstrap_95ci": [
+              -0.07294992527663353,
+              0.009524510006467871
+            ],
+            "omission_paired_mean": -0.030269376906745128
+          },
+          "topk": {
+            "1": {
+              "exact_sign_p": 1.0,
+              "gains": 0,
+              "losses": 1,
+              "net": -1
+            },
+            "5": {
+              "exact_sign_p": 0.5,
+              "gains": 2,
+              "losses": 0,
+              "net": 2
+            },
+            "10": {
+              "exact_sign_p": 1.0,
+              "gains": 1,
+              "losses": 1,
+              "net": 0
+            },
+            "20": {
+              "exact_sign_p": 1.0,
+              "gains": 0,
+              "losses": 0,
+              "net": 0
+            }
+          }
+        },
+        "Math": {
+          "bugs": 106,
+          "deleted_evaluable": 100,
+          "official_evaluable": 104,
+          "paired": 100,
+          "paired_omission": 51,
+          "evaluability_gain": 4,
+          "mrr_delta": {
+            "all_paired_bootstrap_95ci": [
+              -0.0066691667566872405,
+              0.06416691257493444
+            ],
+            "all_paired_mean": 0.02808372797646319,
+            "omission_paired_bootstrap_95ci": [
+              0.02490961671727817,
+              0.1325792503555797
+            ],
+            "omission_paired_mean": 0.07415692814774652
+          },
+          "exam_improvement": {
+            "all_paired_bootstrap_95ci": [
+              0.01089304956601938,
+              0.06477230991241241
+            ],
+            "all_paired_mean": 0.03519744297527195,
+            "omission_paired_bootstrap_95ci": [
+              0.022766898107087714,
+              0.12604432267365157
+            ],
+            "omission_paired_mean": 0.06926202249136103
+          },
+          "gmar_f_delta": {
+            "all_paired_bootstrap_95ci": [
+              0.01152554034670414,
+              0.10263376141104821
+            ],
+            "all_paired_mean": 0.05386008367224647,
+            "omission_paired_bootstrap_95ci": [
+              0.0299143657574366,
+              0.2011309424144748
+            ],
+            "omission_paired_mean": 0.10947184254873893
+          },
+          "topk": {
+            "1": {
+              "exact_sign_p": 1.0,
+              "gains": 1,
+              "losses": 1,
+              "net": 0
+            },
+            "5": {
+              "exact_sign_p": 0.125,
+              "gains": 6,
+              "losses": 1,
+              "net": 5
+            },
+            "10": {
+              "exact_sign_p": 0.453125,
+              "gains": 5,
+              "losses": 2,
+              "net": 3
+            },
+            "20": {
+              "exact_sign_p": 0.2890625,
+              "gains": 6,
+              "losses": 2,
+              "net": 4
+            }
+          }
+        },
+        "Mockito": {
+          "bugs": 38,
+          "deleted_evaluable": 34,
+          "official_evaluable": 37,
+          "paired": 34,
+          "paired_omission": 22,
+          "evaluability_gain": 3,
+          "mrr_delta": {
+            "all_paired_bootstrap_95ci": [
+              -0.019152685067947667,
+              0.08284822831979552
+            ],
+            "all_paired_mean": 0.02960208182100184,
+            "omission_paired_bootstrap_95ci": [
+              -0.02729752515132485,
+              0.12670668510489758
+            ],
+            "omission_paired_mean": 0.04810994699373248
+          },
+          "exam_improvement": {
+            "all_paired_bootstrap_95ci": [
+              0.0022866406383778206,
+              0.14065063904491037
+            ],
+            "all_paired_mean": 0.06306085390332888,
+            "omission_paired_bootstrap_95ci": [
+              0.004988438244357455,
+              0.20000684796292817
+            ],
+            "omission_paired_mean": 0.09765297673352077
+          },
+          "gmar_f_delta": {
+            "all_paired_bootstrap_95ci": [
+              0.011171208300134024,
+              0.20256483895703395
+            ],
+            "all_paired_mean": 0.0954481382413838,
+            "omission_paired_bootstrap_95ci": [
+              0.018140984098363556,
+              0.29642646904493075
+            ],
+            "omission_paired_mean": 0.14772564000512006
+          },
+          "topk": {
+            "1": {
+              "exact_sign_p": 1.0,
+              "gains": 0,
+              "losses": 0,
+              "net": 0
+            },
+            "5": {
+              "exact_sign_p": 0.375,
+              "gains": 4,
+              "losses": 1,
+              "net": 3
+            },
+            "10": {
+              "exact_sign_p": 0.6875,
+              "gains": 4,
+              "losses": 2,
+              "net": 2
+            },
+            "20": {
+              "exact_sign_p": 0.25,
+              "gains": 3,
+              "losses": 0,
+              "net": 3
+            }
+          }
+        },
+        "Time": {
+          "bugs": 27,
+          "deleted_evaluable": 26,
+          "official_evaluable": 26,
+          "paired": 26,
+          "paired_omission": 22,
+          "evaluability_gain": 0,
+          "mrr_delta": {
+            "all_paired_bootstrap_95ci": [
+              -0.12615158556423123,
+              0.06894411920889289
+            ],
+            "all_paired_mean": -0.025261128354547968,
+            "omission_paired_bootstrap_95ci": [
+              -0.1493826803112671,
+              0.08216367558509434
+            ],
+            "omission_paired_mean": -0.029854060782647598
+          },
+          "exam_improvement": {
+            "all_paired_bootstrap_95ci": [
+              -0.0002607984096951589,
+              0.06487225606326731
+            ],
+            "all_paired_mean": 0.0217815653864415,
+            "omission_paired_bootstrap_95ci": [
+              -0.0003235226312149389,
+              0.07680468714119103
+            ],
+            "omission_paired_mean": 0.02574185000215814
+          },
+          "gmar_f_delta": {
+            "all_paired_bootstrap_95ci": [
+              -0.03377775872958684,
+              0.118800120894963
+            ],
+            "all_paired_mean": 0.030608754740303275,
+            "omission_paired_bootstrap_95ci": [
+              -0.04824572535193572,
+              0.1281316209229926
+            ],
+            "omission_paired_mean": 0.02613981991480747
+          },
+          "topk": {
+            "1": {
+              "exact_sign_p": 0.25,
+              "gains": 0,
+              "losses": 3,
+              "net": -3
+            },
+            "5": {
+              "exact_sign_p": 0.25,
+              "gains": 3,
+              "losses": 0,
+              "net": 3
+            },
+            "10": {
+              "exact_sign_p": 0.25,
+              "gains": 3,
+              "losses": 0,
+              "net": 3
+            },
+            "20": {
+              "exact_sign_p": 0.5,
+              "gains": 2,
+              "losses": 0,
+              "net": 2
+            }
+          }
+        }
+      },
+      "equal_project_weighted": {
+        "mrr_delta": {
+          "all_paired_bootstrap_95ci": [
+            -0.012058600247191055,
+            0.029500097819967545
+          ],
+          "all_paired_mean": 0.00909530366116974,
+          "all_paired_project_means": {
+            "Chart": 0.004761605010089779,
+            "Closure": 0.024080880618211363,
+            "Lang": -0.006695345104199766,
+            "Math": 0.02808372797646319,
+            "Mockito": 0.02960208182100184,
+            "Time": -0.025261128354547968
+          },
+          "omission_paired_bootstrap_95ci": [
+            -0.006307660378717947,
+            0.048719491289243015
+          ],
+          "omission_paired_mean": 0.02116750898469285,
+          "omission_paired_project_means": {
+            "Chart": 0.009126409602672076,
+            "Closure": 0.03293559671095902,
+            "Lang": -0.00746976676430539,
+            "Math": 0.07415692814774652,
+            "Mockito": 0.04810994699373248,
+            "Time": -0.029854060782647598
+          }
+        },
+        "exam_improvement": {
+          "all_paired_bootstrap_95ci": [
+            0.015356488903217618,
+            0.04801249307614751
+          ],
+          "all_paired_mean": 0.03036433757136445,
+          "all_paired_project_means": {
+            "Chart": 0.02746978824999678,
+            "Closure": 0.025824732398991048,
+            "Lang": 0.008851642514156538,
+            "Math": 0.03519744297527195,
+            "Mockito": 0.06306085390332888,
+            "Time": 0.0217815653864415
+          },
+          "omission_paired_bootstrap_95ci": [
+            0.025746160410931886,
+            0.07677824071072445
+          ],
+          "omission_paired_mean": 0.04899240235859486,
+          "omission_paired_project_means": {
+            "Chart": 0.052650427479160496,
+            "Closure": 0.03586482982574041,
+            "Lang": 0.0127823076196283,
+            "Math": 0.06926202249136103,
+            "Mockito": 0.09765297673352077,
+            "Time": 0.02574185000215814
+          }
+        },
+        "gmar_f_delta": {
+          "all_paired_bootstrap_95ci": [
+            0.019310714288464564,
+            0.07655833023374596
+          ],
+          "all_paired_mean": 0.04620214334828007,
+          "all_paired_project_means": {
+            "Chart": 0.079646738331444,
+            "Closure": 0.037715661614033884,
+            "Lang": -0.020066516509730997,
+            "Math": 0.05386008367224647,
+            "Mockito": 0.0954481382413838,
+            "Time": 0.030608754740303275
+          },
+          "omission_paired_bootstrap_95ci": [
+            0.03271421521825801,
+            0.12331183104501783
+          ],
+          "omission_paired_mean": 0.07525551002591505,
+          "omission_paired_project_means": {
+            "Chart": 0.15250120997796424,
+            "Closure": 0.04596392461560469,
+            "Lang": -0.030269376906745128,
+            "Math": 0.10947184254873893,
+            "Mockito": 0.14772564000512006,
+            "Time": 0.02613981991480747
+          }
+        }
+      },
+      "leave_one_project_out": {
+        "Chart": {
+          "bugs": 369,
+          "deleted_evaluable": 324,
+          "official_evaluable": 352,
+          "paired": 322,
+          "paired_omission": 205,
+          "evaluability_gain": 28,
+          "mrr_delta": {
+            "all_paired_bootstrap_95ci": [
+              -0.0037333716511304066,
+              0.03728943053654618
+            ],
+            "all_paired_mean": 0.016666038781862617,
+            "omission_paired_bootstrap_95ci": [
+              0.0008158668254406728,
+              0.061085315849547364
+            ],
+            "omission_paired_mean": 0.03039385021877619
+          },
+          "exam_improvement": {
+            "all_paired_bootstrap_95ci": [
+              0.015997332345698455,
+              0.044291662990187594
+            ],
+            "all_paired_mean": 0.029441679302045054,
+            "omission_paired_bootstrap_95ci": [
+              0.025439321576042673,
+              0.06788115791060315
+            ],
+            "omission_paired_mean": 0.04532664512213376
+          },
+          "gmar_f_delta": {
+            "all_paired_bootstrap_95ci": [
+              0.015530682867359067,
+              0.06382190302940874
+            ],
+            "all_paired_mean": 0.03838195675573292,
+            "omission_paired_bootstrap_95ci": [
+              0.02114441813744451,
+              0.09430373814903405
+            ],
+            "omission_paired_mean": 0.056053839202775436
+          },
+          "topk": {
+            "1": {
+              "exact_sign_p": 0.34375,
+              "gains": 3,
+              "losses": 7,
+              "net": -4
+            },
+            "5": {
+              "exact_sign_p": 0.000310748815536499,
+              "gains": 23,
+              "losses": 4,
+              "net": 19
+            },
+            "10": {
+              "exact_sign_p": 0.003326892852783203,
+              "gains": 24,
+              "losses": 7,
+              "net": 17
+            },
+            "20": {
+              "exact_sign_p": 0.0009122341871261597,
+              "gains": 23,
+              "losses": 5,
+              "net": 18
+            }
+          }
+        },
+        "Closure": {
+          "bugs": 262,
+          "deleted_evaluable": 240,
+          "official_evaluable": 250,
+          "paired": 238,
+          "paired_omission": 146,
+          "evaluability_gain": 10,
+          "mrr_delta": {
+            "all_paired_bootstrap_95ci": [
+              -0.00858655566120148,
+              0.03300313003077338
+            ],
+            "all_paired_mean": 0.012182046961526102,
+            "omission_paired_bootstrap_95ci": [
+              -0.0028762059408815872,
+              0.05892351470363994
+            ],
+            "omission_paired_mean": 0.027409786600021194
+          },
+          "exam_improvement": {
+            "all_paired_bootstrap_95ci": [
+              0.01543051434943737,
+              0.048647373740282614
+            ],
+            "all_paired_mean": 0.03087722478284198,
+            "omission_paired_bootstrap_95ci": [
+              0.02615989139531035,
+              0.0785567686840597
+            ],
+            "omission_paired_mean": 0.050529893576436835
+          },
+          "gmar_f_delta": {
+            "all_paired_bootstrap_95ci": [
+              0.016275457516670675,
+              0.07202298601019123
+            ],
+            "all_paired_mean": 0.042669282622973065,
+            "omission_paired_bootstrap_95ci": [
+              0.02660303893656296,
+              0.11584520624516285
+            ],
+            "omission_paired_mean": 0.06888775964792193
+          },
+          "topk": {
+            "1": {
+              "exact_sign_p": 0.21875,
+              "gains": 1,
+              "losses": 5,
+              "net": -4
+            },
+            "5": {
+              "exact_sign_p": 0.002349853515625,
+              "gains": 15,
+              "losses": 2,
+              "net": 13
+            },
+            "10": {
+              "exact_sign_p": 0.09625244140625,
+              "gains": 13,
+              "losses": 5,
+              "net": 8
+            },
+            "20": {
+              "exact_sign_p": 0.012939453125,
+              "gains": 12,
+              "losses": 2,
+              "net": 10
+            }
+          }
+        },
+        "Lang": {
+          "bugs": 330,
+          "deleted_evaluable": 292,
+          "official_evaluable": 317,
+          "paired": 290,
+          "paired_omission": 178,
+          "evaluability_gain": 25,
+          "mrr_delta": {
+            "all_paired_bootstrap_95ci": [
+              -0.0019457274486407608,
+              0.04176969473261114
+            ],
+            "all_paired_mean": 0.02015250132318212,
+            "omission_paired_bootstrap_95ci": [
+              0.0034615568481474366,
+              0.0712627416214782
+            ],
+            "omission_paired_mean": 0.037256051201624125
+          },
+          "exam_improvement": {
+            "all_paired_bootstrap_95ci": [
+              0.018470818202480466,
+              0.0497885950939901
+            ],
+            "all_paired_mean": 0.033190294919758015,
+            "omission_paired_bootstrap_95ci": [
+              0.030197380093321003,
+              0.07820497791620827
+            ],
+            "omission_paired_mean": 0.05295088417203283
+          },
+          "gmar_f_delta": {
+            "all_paired_bootstrap_95ci": [
+              0.026812586759769847,
+              0.08093733658618249
+            ],
+            "all_paired_mean": 0.052739736086222136,
+            "omission_paired_bootstrap_95ci": [
+              0.040718691228740646,
+              0.12515509721583057
+            ],
+            "omission_paired_mean": 0.08146942278464941
+          },
+          "topk": {
+            "1": {
+              "exact_sign_p": 0.5078125,
+              "gains": 3,
+              "losses": 6,
+              "net": -3
+            },
+            "5": {
+              "exact_sign_p": 0.0009105205535888672,
+              "gains": 21,
+              "losses": 4,
+              "net": 17
+            },
+            "10": {
+              "exact_sign_p": 0.002315700054168701,
+              "gains": 23,
+              "losses": 6,
+              "net": 17
+            },
+            "20": {
+              "exact_sign_p": 0.0005461126565933228,
+              "gains": 24,
+              "losses": 5,
+              "net": 19
+            }
+          }
+        },
+        "Math": {
+          "bugs": 289,
+          "deleted_evaluable": 248,
+          "official_evaluable": 272,
+          "paired": 245,
+          "paired_omission": 166,
+          "evaluability_gain": 24,
+          "mrr_delta": {
+            "all_paired_bootstrap_95ci": [
+              -0.011820720100061952,
+              0.03339980353153841
+            ],
+            "all_paired_mean": 0.010888198389165342,
+            "omission_paired_bootstrap_95ci": [
+              -0.017653488556860233,
+              0.04841200070864653
+            ],
+            "omission_paired_mean": 0.015411161894856097
+          },
+          "exam_improvement": {
+            "all_paired_bootstrap_95ci": [
+              0.012396366128173329,
+              0.0434856979975359
+            ],
+            "all_paired_mean": 0.026907271704005056,
+            "omission_paired_bootstrap_95ci": [
+              0.018465663679663083,
+              0.06133037658011682
+            ],
+            "omission_paired_mean": 0.03850243513691527
+          },
+          "gmar_f_delta": {
+            "all_paired_bootstrap_95ci": [
+              0.010109787616549187,
+              0.06454354220776329
+            ],
+            "all_paired_mean": 0.03593819057038599,
+            "omission_paired_bootstrap_95ci": [
+              0.010306891646296779,
+              0.08671533166922869
+            ],
+            "omission_paired_mean": 0.04661438305011355
+          },
+          "topk": {
+            "1": {
+              "exact_sign_p": 0.2890625,
+              "gains": 2,
+              "losses": 6,
+              "net": -4
+            },
+            "5": {
+              "exact_sign_p": 0.0025768280029296875,
+              "gains": 17,
+              "losses": 3,
+              "net": 14
+            },
+            "10": {
+              "exact_sign_p": 0.006610751152038574,
+              "gains": 19,
+              "losses": 5,
+              "net": 14
+            },
+            "20": {
+              "exact_sign_p": 0.0014896392822265625,
+              "gains": 18,
+              "losses": 3,
+              "net": 15
+            }
+          }
+        },
+        "Mockito": {
+          "bugs": 357,
+          "deleted_evaluable": 314,
+          "official_evaluable": 339,
+          "paired": 311,
+          "paired_omission": 195,
+          "evaluability_gain": 25,
+          "mrr_delta": {
+            "all_paired_bootstrap_95ci": [
+              -0.00636143480234761,
+              0.034674830244530934
+            ],
+            "all_paired_mean": 0.0143714167880314,
+            "omission_paired_bootstrap_95ci": [
+              -0.00296487131330847,
+              0.05810775154014288
+            ],
+            "omission_paired_mean": 0.027086345519072155
+          },
+          "exam_improvement": {
+            "all_paired_bootstrap_95ci": [
+              0.013276851414907033,
+              0.039703812111373325
+            ],
+            "all_paired_mean": 0.02562043997522589,
+            "omission_paired_bootstrap_95ci": [
+              0.021395302977665925,
+              0.060822625680390895
+            ],
+            "omission_paired_mean": 0.03987385585461482
+          },
+          "gmar_f_delta": {
+            "all_paired_bootstrap_95ci": [
+              0.012575291401324311,
+              0.059871389039108026
+            ],
+            "all_paired_mean": 0.0351949464847658,
+            "omission_paired_bootstrap_95ci": [
+              0.01658888329971373,
+              0.09023882503438914
+            ],
+            "omission_paired_mean": 0.05164660244200971
+          },
+          "topk": {
+            "1": {
+              "exact_sign_p": 0.34375,
+              "gains": 3,
+              "losses": 7,
+              "net": -4
+            },
+            "5": {
+              "exact_sign_p": 0.0008554458618164062,
+              "gains": 19,
+              "losses": 3,
+              "net": 16
+            },
+            "10": {
+              "exact_sign_p": 0.004077315330505371,
+              "gains": 20,
+              "losses": 5,
+              "net": 15
+            },
+            "20": {
+              "exact_sign_p": 0.002493917942047119,
+              "gains": 21,
+              "losses": 5,
+              "net": 16
+            }
+          }
+        },
+        "Time": {
+          "bugs": 368,
+          "deleted_evaluable": 322,
+          "official_evaluable": 350,
+          "paired": 319,
+          "paired_omission": 195,
+          "evaluability_gain": 28,
+          "mrr_delta": {
+            "all_paired_bootstrap_95ci": [
+              0.00034371902218635034,
+              0.038148914158074254
+            ],
+            "all_paired_mean": 0.019224986646426568,
+            "omission_paired_bootstrap_95ci": [
+              0.0074453194531961175,
+              0.06466183445864815
+            ],
+            "omission_paired_mean": 0.035882284857945805
+          },
+          "exam_improvement": {
+            "all_paired_bootstrap_95ci": [
+              0.016658907175401062,
+              0.04491643099095358
+            ],
+            "all_paired_mean": 0.02992384064251083,
+            "omission_paired_bootstrap_95ci": [
+              0.02721178054317066,
+              0.07117497366645446
+            ],
+            "omission_paired_mean": 0.04798690604994804
+          },
+          "gmar_f_delta": {
+            "all_paired_bootstrap_95ci": [
+              0.018455103932189038,
+              0.0676752389116112
+            ],
+            "all_paired_mean": 0.041990712958374074,
+            "omission_paired_bootstrap_95ci": [
+              0.028508014197034123,
+              0.10522470300968301
+            ],
+            "omission_paired_mean": 0.06536397701630138
+          },
+          "topk": {
+            "1": {
+              "exact_sign_p": 1.0,
+              "gains": 3,
+              "losses": 4,
+              "net": -1
+            },
+            "5": {
+              "exact_sign_p": 0.001543879508972168,
+              "gains": 20,
+              "losses": 4,
+              "net": 16
+            },
+            "10": {
+              "exact_sign_p": 0.012540951371192932,
+              "gains": 21,
+              "losses": 7,
+              "net": 14
+            },
+            "20": {
+              "exact_sign_p": 0.0015137195587158203,
+              "gains": 22,
+              "losses": 5,
+              "net": 17
+            }
+          }
+        }
+      },
+      "topk_dominance": {
+        "1": {
+          "by_project": {
+            "Chart": {
+              "gains": 0,
+              "losses": 0,
+              "net": 0
+            },
+            "Closure": {
+              "gains": 2,
+              "losses": 2,
+              "net": 0
+            },
+            "Lang": {
+              "gains": 0,
+              "losses": 1,
+              "net": -1
+            },
+            "Math": {
+              "gains": 1,
+              "losses": 1,
+              "net": 0
+            },
+            "Mockito": {
+              "gains": 0,
+              "losses": 0,
+              "net": 0
+            },
+            "Time": {
+              "gains": 0,
+              "losses": 3,
+              "net": -3
+            }
+          },
+          "largest_discordant_project": "Closure",
+          "largest_discordant_share": 0.4,
+          "largest_gain_project": "Closure",
+          "largest_gain_share": 0.6666666666666666,
+          "largest_positive_net_project": "Chart",
+          "largest_positive_net_share": 0.0,
+          "largest_net_over_total_net": -0.0,
+          "positive_net_total": 0,
+          "total_discordant": 10,
+          "total_gains": 3,
+          "total_losses": 7,
+          "total_net": -4
+        },
+        "5": {
+          "by_project": {
+            "Chart": {
+              "gains": 0,
+              "losses": 0,
+              "net": 0
+            },
+            "Closure": {
+              "gains": 8,
+              "losses": 2,
+              "net": 6
+            },
+            "Lang": {
+              "gains": 2,
+              "losses": 0,
+              "net": 2
+            },
+            "Math": {
+              "gains": 6,
+              "losses": 1,
+              "net": 5
+            },
+            "Mockito": {
+              "gains": 4,
+              "losses": 1,
+              "net": 3
+            },
+            "Time": {
+              "gains": 3,
+              "losses": 0,
+              "net": 3
+            }
+          },
+          "largest_discordant_project": "Closure",
+          "largest_discordant_share": 0.37037037037037035,
+          "largest_gain_project": "Closure",
+          "largest_gain_share": 0.34782608695652173,
+          "largest_positive_net_project": "Closure",
+          "largest_positive_net_share": 0.3157894736842105,
+          "largest_net_over_total_net": 0.3157894736842105,
+          "positive_net_total": 19,
+          "total_discordant": 27,
+          "total_gains": 23,
+          "total_losses": 4,
+          "total_net": 19
+        },
+        "10": {
+          "by_project": {
+            "Chart": {
+              "gains": 0,
+              "losses": 0,
+              "net": 0
+            },
+            "Closure": {
+              "gains": 11,
+              "losses": 2,
+              "net": 9
+            },
+            "Lang": {
+              "gains": 1,
+              "losses": 1,
+              "net": 0
+            },
+            "Math": {
+              "gains": 5,
+              "losses": 2,
+              "net": 3
+            },
+            "Mockito": {
+              "gains": 4,
+              "losses": 2,
+              "net": 2
+            },
+            "Time": {
+              "gains": 3,
+              "losses": 0,
+              "net": 3
+            }
+          },
+          "largest_discordant_project": "Closure",
+          "largest_discordant_share": 0.41935483870967744,
+          "largest_gain_project": "Closure",
+          "largest_gain_share": 0.4583333333333333,
+          "largest_positive_net_project": "Closure",
+          "largest_positive_net_share": 0.5294117647058824,
+          "largest_net_over_total_net": 0.5294117647058824,
+          "positive_net_total": 17,
+          "total_discordant": 31,
+          "total_gains": 24,
+          "total_losses": 7,
+          "total_net": 17
+        },
+        "20": {
+          "by_project": {
+            "Chart": {
+              "gains": 1,
+              "losses": 0,
+              "net": 1
+            },
+            "Closure": {
+              "gains": 12,
+              "losses": 3,
+              "net": 9
+            },
+            "Lang": {
+              "gains": 0,
+              "losses": 0,
+              "net": 0
+            },
+            "Math": {
+              "gains": 6,
+              "losses": 2,
+              "net": 4
+            },
+            "Mockito": {
+              "gains": 3,
+              "losses": 0,
+              "net": 3
+            },
+            "Time": {
+              "gains": 2,
+              "losses": 0,
+              "net": 2
+            }
+          },
+          "largest_discordant_project": "Closure",
+          "largest_discordant_share": 0.5172413793103449,
+          "largest_gain_project": "Closure",
+          "largest_gain_share": 0.5,
+          "largest_positive_net_project": "Closure",
+          "largest_positive_net_share": 0.47368421052631576,
+          "largest_net_over_total_net": 0.47368421052631576,
+          "positive_net_total": 19,
+          "total_discordant": 29,
+          "total_gains": 24,
+          "total_losses": 5,
+          "total_net": 19
+        }
+      },
+      "lopo_direction_summary": {
+        "mrr_delta": {
+          "all_paired": {
+            "all_nonnegative": true,
+            "maximum": 0.02015250132318212,
+            "minimum": 0.010888198389165342
+          },
+          "omission_paired": {
+            "all_nonnegative": true,
+            "maximum": 0.037256051201624125,
+            "minimum": 0.015411161894856097
+          }
+        },
+        "exam_improvement": {
+          "all_paired": {
+            "all_nonnegative": true,
+            "maximum": 0.033190294919758015,
+            "minimum": 0.02562043997522589
+          },
+          "omission_paired": {
+            "all_nonnegative": true,
+            "maximum": 0.05295088417203283,
+            "minimum": 0.03850243513691527
+          }
+        },
+        "gmar_f_delta": {
+          "all_paired": {
+            "all_nonnegative": true,
+            "maximum": 0.052739736086222136,
+            "minimum": 0.0351949464847658
+          },
+          "omission_paired": {
+            "all_nonnegative": true,
+            "maximum": 0.08146942278464941,
+            "minimum": 0.04661438305011355
+          }
+        }
+      }
+    },
+    "tarantula": {
+      "all_projects_pooled": {
+        "bugs": 395,
+        "deleted_evaluable": 348,
+        "official_evaluable": 376,
+        "paired": 345,
+        "paired_omission": 217,
+        "evaluability_gain": 28,
+        "mrr_delta": {
+          "all_paired_bootstrap_95ci": [
+            -0.005611974519323496,
+            0.03126952679478638
+          ],
+          "all_paired_mean": 0.013007916332780799,
+          "omission_paired_bootstrap_95ci": [
+            -0.002413782885999924,
+            0.052865222943652125
+          ],
+          "omission_paired_mean": 0.024977823779173045
+        },
+        "exam_improvement": {
+          "all_paired_bootstrap_95ci": [
+            0.016192202030267066,
+            0.04302246723945628
+          ],
+          "all_paired_mean": 0.028987188573852546,
+          "omission_paired_bootstrap_95ci": [
+            0.02623600535327757,
+            0.06645396431536271
+          ],
+          "omission_paired_mean": 0.04522415130862563
+        },
+        "gmar_f_delta": {
+          "all_paired_bootstrap_95ci": [
+            0.018687372965105947,
+            0.06498610777846998
+          ],
+          "all_paired_mean": 0.04097831438086231,
+          "omission_paired_bootstrap_95ci": [
+            0.026449738382258014,
+            0.09746670967997573
+          ],
+          "omission_paired_mean": 0.060814145859079426
+        },
+        "topk": {
+          "1": {
+            "exact_sign_p": 0.5078125,
+            "gains": 3,
+            "losses": 6,
+            "net": -3
+          },
+          "5": {
+            "exact_sign_p": 0.004077315330505371,
+            "gains": 20,
+            "losses": 5,
+            "net": 15
+          },
+          "10": {
+            "exact_sign_p": 0.09873714670538902,
+            "gains": 20,
+            "losses": 10,
+            "net": 10
+          },
+          "20": {
+            "exact_sign_p": 0.001430906355381012,
+            "gains": 24,
+            "losses": 6,
+            "net": 18
+          }
+        }
+      },
+      "by_project": {
+        "Chart": {
+          "bugs": 26,
+          "deleted_evaluable": 24,
+          "official_evaluable": 24,
+          "paired": 23,
+          "paired_omission": 12,
+          "evaluability_gain": 0,
+          "mrr_delta": {
+            "all_paired_bootstrap_95ci": [
+              0.0,
+              0.012973865644748226
+            ],
+            "all_paired_mean": 0.004761605010089779,
+            "omission_paired_bootstrap_95ci": [
+              0.0,
+              0.02327812518317508
+            ],
+            "omission_paired_mean": 0.009126409602672076
+          },
+          "exam_improvement": {
+            "all_paired_bootstrap_95ci": [
+              0.0,
+              0.07857304761444048
+            ],
+            "all_paired_mean": 0.02746978824999678,
+            "omission_paired_bootstrap_95ci": [
+              0.0,
+              0.14324540008454031
+            ],
+            "omission_paired_mean": 0.052650427479160496
+          },
+          "gmar_f_delta": {
+            "all_paired_bootstrap_95ci": [
+              0.0017231761172295016,
+              0.198996959630304
+            ],
+            "all_paired_mean": 0.08217375442289414,
+            "omission_paired_bootstrap_95ci": [
+              0.005248385466684445,
+              0.35686957730154045
+            ],
+            "omission_paired_mean": 0.157344657486577
+          },
+          "topk": {
+            "1": {
+              "exact_sign_p": 1.0,
+              "gains": 0,
+              "losses": 0,
+              "net": 0
+            },
+            "5": {
+              "exact_sign_p": 1.0,
+              "gains": 0,
+              "losses": 0,
+              "net": 0
+            },
+            "10": {
+              "exact_sign_p": 1.0,
+              "gains": 0,
+              "losses": 0,
+              "net": 0
+            },
+            "20": {
+              "exact_sign_p": 1.0,
+              "gains": 1,
+              "losses": 0,
+              "net": 1
+            }
+          }
+        },
+        "Closure": {
+          "bugs": 133,
+          "deleted_evaluable": 108,
+          "official_evaluable": 126,
+          "paired": 107,
+          "paired_omission": 71,
+          "evaluability_gain": 18,
+          "mrr_delta": {
+            "all_paired_bootstrap_95ci": [
+              -0.008692675732190486,
+              0.06556911475252343
+            ],
+            "all_paired_mean": 0.02753262057123149,
+            "omission_paired_bootstrap_95ci": [
+              -0.01503199605439442,
+              0.09585166614056168
+            ],
+            "omission_paired_mean": 0.039097821966662845
+          },
+          "exam_improvement": {
+            "all_paired_bootstrap_95ci": [
+              0.0038710141591835356,
+              0.049773242602436325
+            ],
+            "all_paired_mean": 0.024853851229766508,
+            "omission_paired_bootstrap_95ci": [
+              0.00829693482056212,
+              0.06790630347837615
+            ],
+            "omission_paired_mean": 0.034420252024426244
+          },
+          "gmar_f_delta": {
+            "all_paired_bootstrap_95ci": [
+              -0.002999972099082967,
+              0.08347792362592717
+            ],
+            "all_paired_mean": 0.03670607442536257,
+            "omission_paired_bootstrap_95ci": [
+              -0.009884988571682326,
+              0.10742025548238669
+            ],
+            "omission_paired_mean": 0.04351948461911806
+          },
+          "topk": {
+            "1": {
+              "exact_sign_p": 1.0,
+              "gains": 2,
+              "losses": 1,
+              "net": 1
+            },
+            "5": {
+              "exact_sign_p": 0.1796875,
+              "gains": 7,
+              "losses": 2,
+              "net": 5
+            },
+            "10": {
+              "exact_sign_p": 0.1795654296875,
+              "gains": 10,
+              "losses": 4,
+              "net": 6
+            },
+            "20": {
+              "exact_sign_p": 0.049041748046875,
+              "gains": 13,
+              "losses": 4,
+              "net": 9
+            }
+          }
+        },
+        "Lang": {
+          "bugs": 65,
+          "deleted_evaluable": 56,
+          "official_evaluable": 59,
+          "paired": 55,
+          "paired_omission": 39,
+          "evaluability_gain": 3,
+          "mrr_delta": {
+            "all_paired_bootstrap_95ci": [
+              -0.052692402867735924,
+              0.026430599101122065
+            ],
+            "all_paired_mean": -0.0108062276901215,
+            "omission_paired_bootstrap_95ci": [
+              -0.07203982887164088,
+              0.0392156862745098
+            ],
+            "omission_paired_mean": -0.013267165282912963
+          },
+          "exam_improvement": {
+            "all_paired_bootstrap_95ci": [
+              -0.001997323395214836,
+              0.03093133376452082
+            ],
+            "all_paired_mean": 0.010129579788462401,
+            "omission_paired_bootstrap_95ci": [
+              -0.002448515480406002,
+              0.043905136228143814
+            ],
+            "omission_paired_mean": 0.014584526852623748
+          },
+          "gmar_f_delta": {
+            "all_paired_bootstrap_95ci": [
+              -0.04658170916296684,
+              0.012636009243328635
+            ],
+            "all_paired_mean": -0.015536732256138963,
+            "omission_paired_bootstrap_95ci": [
+              -0.06685762767444627,
+              0.016080110632968405
+            ],
+            "omission_paired_mean": -0.02388121962603841
+          },
+          "topk": {
+            "1": {
+              "exact_sign_p": 1.0,
+              "gains": 0,
+              "losses": 1,
+              "net": -1
+            },
+            "5": {
+              "exact_sign_p": 1.0,
+              "gains": 2,
+              "losses": 1,
+              "net": 1
+            },
+            "10": {
+              "exact_sign_p": 0.5,
+              "gains": 0,
+              "losses": 2,
+              "net": -2
+            },
+            "20": {
+              "exact_sign_p": 1.0,
+              "gains": 0,
+              "losses": 0,
+              "net": 0
+            }
+          }
+        },
+        "Math": {
+          "bugs": 106,
+          "deleted_evaluable": 100,
+          "official_evaluable": 104,
+          "paired": 100,
+          "paired_omission": 51,
+          "evaluability_gain": 4,
+          "mrr_delta": {
+            "all_paired_bootstrap_95ci": [
+              -0.011591717569983853,
+              0.05430665798570538
+            ],
+            "all_paired_mean": 0.021079664240308677,
+            "omission_paired_bootstrap_95ci": [
+              0.017293283889954714,
+              0.11478760575465344
+            ],
+            "omission_paired_mean": 0.060423469841561196
+          },
+          "exam_improvement": {
+            "all_paired_bootstrap_95ci": [
+              0.011076156331028883,
+              0.06525734605867055
+            ],
+            "all_paired_mean": 0.035216594260105885,
+            "omission_paired_bootstrap_95ci": [
+              0.02353783860373911,
+              0.1252137610856549
+            ],
+            "omission_paired_mean": 0.06929957403025111
+          },
+          "gmar_f_delta": {
+            "all_paired_bootstrap_95ci": [
+              0.009763800084328277,
+              0.1009517462407533
+            ],
+            "all_paired_mean": 0.05216297789498115,
+            "omission_paired_bootstrap_95ci": [
+              0.02393842596920256,
+              0.2003879205975827
+            ],
+            "omission_paired_mean": 0.10614418416194418
+          },
+          "topk": {
+            "1": {
+              "exact_sign_p": 1.0,
+              "gains": 1,
+              "losses": 1,
+              "net": 0
+            },
+            "5": {
+              "exact_sign_p": 0.21875,
+              "gains": 5,
+              "losses": 1,
+              "net": 4
+            },
+            "10": {
+              "exact_sign_p": 0.453125,
+              "gains": 5,
+              "losses": 2,
+              "net": 3
+            },
+            "20": {
+              "exact_sign_p": 0.2890625,
+              "gains": 6,
+              "losses": 2,
+              "net": 4
+            }
+          }
+        },
+        "Mockito": {
+          "bugs": 38,
+          "deleted_evaluable": 34,
+          "official_evaluable": 37,
+          "paired": 34,
+          "paired_omission": 22,
+          "evaluability_gain": 3,
+          "mrr_delta": {
+            "all_paired_bootstrap_95ci": [
+              -0.01951541215148568,
+              0.08231727010886884
+            ],
+            "all_paired_mean": 0.029385308791035136,
+            "omission_paired_bootstrap_95ci": [
+              -0.026353407934220786,
+              0.1256404889336404
+            ],
+            "omission_paired_mean": 0.04777493412923848
+          },
+          "exam_improvement": {
+            "all_paired_bootstrap_95ci": [
+              0.002584730960176373,
+              0.1322310190493872
+            ],
+            "all_paired_mean": 0.06089113355617363,
+            "omission_paired_bootstrap_95ci": [
+              0.004851034664351191,
+              0.1958501026836326
+            ],
+            "omission_paired_mean": 0.09429977256064448
+          },
+          "gmar_f_delta": {
+            "all_paired_bootstrap_95ci": [
+              0.011429769398711268,
+              0.19368080161036816
+            ],
+            "all_paired_mean": 0.09366179672118799,
+            "omission_paired_bootstrap_95ci": [
+              0.018873451303601452,
+              0.2941108466808103
+            ],
+            "omission_paired_mean": 0.14477130547704808
+          },
+          "topk": {
+            "1": {
+              "exact_sign_p": 1.0,
+              "gains": 0,
+              "losses": 0,
+              "net": 0
+            },
+            "5": {
+              "exact_sign_p": 0.375,
+              "gains": 4,
+              "losses": 1,
+              "net": 3
+            },
+            "10": {
+              "exact_sign_p": 0.6875,
+              "gains": 4,
+              "losses": 2,
+              "net": 2
+            },
+            "20": {
+              "exact_sign_p": 0.25,
+              "gains": 3,
+              "losses": 0,
+              "net": 3
+            }
+          }
+        },
+        "Time": {
+          "bugs": 27,
+          "deleted_evaluable": 26,
+          "official_evaluable": 26,
+          "paired": 26,
+          "paired_omission": 22,
+          "evaluability_gain": 0,
+          "mrr_delta": {
+            "all_paired_bootstrap_95ci": [
+              -0.1357213318146687,
+              0.04406904985981851
+            ],
+            "all_paired_mean": -0.041557714673609164,
+            "omission_paired_bootstrap_95ci": [
+              -0.15997473332654663,
+              0.0515595679089709
+            ],
+            "omission_paired_mean": -0.04911366279608356
+          },
+          "exam_improvement": {
+            "all_paired_bootstrap_95ci": [
+              -0.0003595257785374703,
+              0.06464874593403054
+            ],
+            "all_paired_mean": 0.021551076590702357,
+            "omission_paired_bootstrap_95ci": [
+              -0.00042595925448822347,
+              0.07630092749730986
+            ],
+            "omission_paired_mean": 0.02546945415264824
+          },
+          "gmar_f_delta": {
+            "all_paired_bootstrap_95ci": [
+              -0.03500499361611734,
+              0.11622064983179727
+            ],
+            "all_paired_mean": 0.029757443931779717,
+            "omission_paired_bootstrap_95ci": [
+              -0.05118009062270938,
+              0.12831860072042334
+            ],
+            "omission_paired_mean": 0.025077082103873407
+          },
+          "topk": {
+            "1": {
+              "exact_sign_p": 0.25,
+              "gains": 0,
+              "losses": 3,
+              "net": -3
+            },
+            "5": {
+              "exact_sign_p": 0.5,
+              "gains": 2,
+              "losses": 0,
+              "net": 2
+            },
+            "10": {
+              "exact_sign_p": 1.0,
+              "gains": 1,
+              "losses": 0,
+              "net": 1
+            },
+            "20": {
+              "exact_sign_p": 1.0,
+              "gains": 1,
+              "losses": 0,
+              "net": 1
+            }
+          }
+        }
+      },
+      "equal_project_weighted": {
+        "mrr_delta": {
+          "all_paired_bootstrap_95ci": [
+            -0.015319743894505012,
+            0.02487587281378461
+          ],
+          "all_paired_mean": 0.0050658760414890695,
+          "all_paired_project_means": {
+            "Chart": 0.004761605010089779,
+            "Closure": 0.02753262057123149,
+            "Lang": -0.0108062276901215,
+            "Math": 0.021079664240308677,
+            "Mockito": 0.029385308791035136,
+            "Time": -0.041557714673609164
+          },
+          "omission_paired_bootstrap_95ci": [
+            -0.011079899619003665,
+            0.04261729995194983
+          ],
+          "omission_paired_mean": 0.015673634576856346,
+          "omission_paired_project_means": {
+            "Chart": 0.009126409602672076,
+            "Closure": 0.039097821966662845,
+            "Lang": -0.013267165282912963,
+            "Math": 0.060423469841561196,
+            "Mockito": 0.04777493412923848,
+            "Time": -0.04911366279608356
+          }
+        },
+        "exam_improvement": {
+          "all_paired_bootstrap_95ci": [
+            0.015334230332915824,
+            0.046926831014067194
+          ],
+          "all_paired_mean": 0.030018670612534593,
+          "all_paired_project_means": {
+            "Chart": 0.02746978824999678,
+            "Closure": 0.024853851229766508,
+            "Lang": 0.010129579788462401,
+            "Math": 0.035216594260105885,
+            "Mockito": 0.06089113355617363,
+            "Time": 0.021551076590702357
+          },
+          "omission_paired_bootstrap_95ci": [
+            0.02518600915555775,
+            0.07491300541818235
+          ],
+          "omission_paired_mean": 0.048454001183292385,
+          "omission_paired_project_means": {
+            "Chart": 0.052650427479160496,
+            "Closure": 0.034420252024426244,
+            "Lang": 0.014584526852623748,
+            "Math": 0.06929957403025111,
+            "Mockito": 0.09429977256064448,
+            "Time": 0.02546945415264824
+          }
+        },
+        "gmar_f_delta": {
+          "all_paired_bootstrap_95ci": [
+            0.01951017374467517,
+            0.07641680959787125
+          ],
+          "all_paired_mean": 0.04648755252334443,
+          "all_paired_project_means": {
+            "Chart": 0.08217375442289414,
+            "Closure": 0.03670607442536257,
+            "Lang": -0.015536732256138963,
+            "Math": 0.05216297789498115,
+            "Mockito": 0.09366179672118799,
+            "Time": 0.029757443931779717
+          },
+          "omission_paired_bootstrap_95ci": [
+            0.03337660488233206,
+            0.1226275890538186
+          ],
+          "omission_paired_mean": 0.07549591570375372,
+          "omission_paired_project_means": {
+            "Chart": 0.157344657486577,
+            "Closure": 0.04351948461911806,
+            "Lang": -0.02388121962603841,
+            "Math": 0.10614418416194418,
+            "Mockito": 0.14477130547704808,
+            "Time": 0.025077082103873407
+          }
+        }
+      },
+      "leave_one_project_out": {
+        "Chart": {
+          "bugs": 369,
+          "deleted_evaluable": 324,
+          "official_evaluable": 352,
+          "paired": 322,
+          "paired_omission": 205,
+          "evaluability_gain": 28,
+          "mrr_delta": {
+            "all_paired_bootstrap_95ci": [
+              -0.005871992494423919,
+              0.03321921622642565
+            ],
+            "all_paired_mean": 0.013596938570115872,
+            "omission_paired_bootstrap_95ci": [
+              -0.003305430430333681,
+              0.055660569008811354
+            ],
+            "omission_paired_mean": 0.025905711438285295
+          },
+          "exam_improvement": {
+            "all_paired_bootstrap_95ci": [
+              0.01596325055049508,
+              0.04372763764865724
+            ],
+            "all_paired_mean": 0.029095574311270814,
+            "omission_paired_bootstrap_95ci": [
+              0.02474408993476052,
+              0.06666000582182191
+            ],
+            "omission_paired_mean": 0.04478944245961871
+          },
+          "gmar_f_delta": {
+            "all_paired_bootstrap_95ci": [
+              0.015155813489922692,
+              0.06308249621262528
+            ],
+            "all_paired_mean": 0.03803578294928861,
+            "omission_paired_bootstrap_95ci": [
+              0.02028445957104381,
+              0.09326984672764331
+            ],
+            "omission_paired_mean": 0.05516357932478688
+          },
+          "topk": {
+            "1": {
+              "exact_sign_p": 0.5078125,
+              "gains": 3,
+              "losses": 6,
+              "net": -3
+            },
+            "5": {
+              "exact_sign_p": 0.004077315330505371,
+              "gains": 20,
+              "losses": 5,
+              "net": 15
+            },
+            "10": {
+              "exact_sign_p": 0.09873714670538902,
+              "gains": 20,
+              "losses": 10,
+              "net": 10
+            },
+            "20": {
+              "exact_sign_p": 0.002315700054168701,
+              "gains": 23,
+              "losses": 6,
+              "net": 17
+            }
+          }
+        },
+        "Closure": {
+          "bugs": 262,
+          "deleted_evaluable": 240,
+          "official_evaluable": 250,
+          "paired": 238,
+          "paired_omission": 146,
+          "evaluability_gain": 10,
+          "mrr_delta": {
+            "all_paired_bootstrap_95ci": [
+              -0.014587097559641132,
+              0.02709530869148662
+            ],
+            "all_paired_mean": 0.0064779022423849,
+            "omission_paired_bootstrap_95ci": [
+              -0.01265441602610792,
+              0.04940741438713893
+            ],
+            "omission_paired_mean": 0.018111249318133484
+          },
+          "exam_improvement": {
+            "all_paired_bootstrap_95ci": [
+              0.015587289528576874,
+              0.04854760987796198
+            ],
+            "all_paired_mean": 0.0308454536823282,
+            "omission_paired_bootstrap_95ci": [
+              0.025902113230816974,
+              0.0784095831016584
+            ],
+            "omission_paired_mean": 0.05047810233039382
+          },
+          "gmar_f_delta": {
+            "all_paired_bootstrap_95ci": [
+              0.01659463262784391,
+              0.07186352595431246
+            ],
+            "all_paired_mean": 0.042899027302032364,
+            "omission_paired_bootstrap_95ci": [
+              0.026475241832022108,
+              0.11621689269862182
+            ],
+            "omission_paired_mean": 0.0692245633113894
+          },
+          "topk": {
+            "1": {
+              "exact_sign_p": 0.21875,
+              "gains": 1,
+              "losses": 5,
+              "net": -4
+            },
+            "5": {
+              "exact_sign_p": 0.021270751953125,
+              "gains": 13,
+              "losses": 3,
+              "net": 10
+            },
+            "10": {
+              "exact_sign_p": 0.454498291015625,
+              "gains": 10,
+              "losses": 6,
+              "net": 4
+            },
+            "20": {
+              "exact_sign_p": 0.0224609375,
+              "gains": 11,
+              "losses": 2,
+              "net": 9
+            }
+          }
+        },
+        "Lang": {
+          "bugs": 330,
+          "deleted_evaluable": 292,
+          "official_evaluable": 317,
+          "paired": 290,
+          "paired_omission": 178,
+          "evaluability_gain": 25,
+          "mrr_delta": {
+            "all_paired_bootstrap_95ci": [
+              -0.002657050810872364,
+              0.038006476847603735
+            ],
+            "all_paired_mean": 0.017524391923331235,
+            "omission_paired_bootstrap_95ci": [
+              0.0024605111865741718,
+              0.06441523432318384
+            ],
+            "omission_paired_mean": 0.03335734385457391
+          },
+          "exam_improvement": {
+            "all_paired_bootstrap_95ci": [
+              0.01802344177872969,
+              0.04874378387338223
+            ],
+            "all_paired_mean": 0.032563631619357575,
+            "omission_paired_bootstrap_95ci": [
+              0.029508529456184054,
+              0.07709572605924092
+            ],
+            "omission_paired_mean": 0.051937327453479974
+          },
+          "gmar_f_delta": {
+            "all_paired_bootstrap_95ci": [
+              0.025793376668276524,
+              0.07967894878056249
+            ],
+            "all_paired_mean": 0.05169668529477634,
+            "omission_paired_bootstrap_95ci": [
+              0.03897017953019811,
+              0.12296870115115047
+            ],
+            "omission_paired_mean": 0.07937099560020075
+          },
+          "topk": {
+            "1": {
+              "exact_sign_p": 0.7265625,
+              "gains": 3,
+              "losses": 5,
+              "net": -2
+            },
+            "5": {
+              "exact_sign_p": 0.004343509674072266,
+              "gains": 18,
+              "losses": 4,
+              "net": 14
+            },
+            "10": {
+              "exact_sign_p": 0.03569813817739487,
+              "gains": 20,
+              "losses": 8,
+              "net": 12
+            },
+            "20": {
+              "exact_sign_p": 0.001430906355381012,
+              "gains": 24,
+              "losses": 6,
+              "net": 18
+            }
+          }
+        },
+        "Math": {
+          "bugs": 289,
+          "deleted_evaluable": 248,
+          "official_evaluable": 272,
+          "paired": 245,
+          "paired_omission": 166,
+          "evaluability_gain": 24,
+          "mrr_delta": {
+            "all_paired_bootstrap_95ci": [
+              -0.012177085387023197,
+              0.032004679701854055
+            ],
+            "all_paired_mean": 0.00971332535011636,
+            "omission_paired_bootstrap_95ci": [
+              -0.017763954879606116,
+              0.04679389458911071
+            ],
+            "omission_paired_mean": 0.014087896374463432
+          },
+          "exam_improvement": {
+            "all_paired_bootstrap_95ci": [
+              0.012195565833642152,
+              0.04242789771649102
+            ],
+            "all_paired_mean": 0.026444574008034853,
+            "omission_paired_bootstrap_95ci": [
+              0.018031376215737784,
+              0.06035060910743238
+            ],
+            "omission_paired_mean": 0.037827485291740695
+          },
+          "gmar_f_delta": {
+            "all_paired_bootstrap_95ci": [
+              0.010734497941077408,
+              0.06474126816667784
+            ],
+            "all_paired_mean": 0.03641314559958931,
+            "omission_paired_bootstrap_95ci": [
+              0.011784681605035327,
+              0.08703635901544249
+            ],
+            "omission_paired_mean": 0.046887447344343865
+          },
+          "topk": {
+            "1": {
+              "exact_sign_p": 0.453125,
+              "gains": 2,
+              "losses": 5,
+              "net": -3
+            },
+            "5": {
+              "exact_sign_p": 0.0192108154296875,
+              "gains": 15,
+              "losses": 4,
+              "net": 11
+            },
+            "10": {
+              "exact_sign_p": 0.21003961563110352,
+              "gains": 15,
+              "losses": 8,
+              "net": 7
+            },
+            "20": {
+              "exact_sign_p": 0.004343509674072266,
+              "gains": 18,
+              "losses": 4,
+              "net": 14
+            }
+          }
+        },
+        "Mockito": {
+          "bugs": 357,
+          "deleted_evaluable": 314,
+          "official_evaluable": 339,
+          "paired": 311,
+          "paired_omission": 195,
+          "evaluability_gain": 25,
+          "mrr_delta": {
+            "all_paired_bootstrap_95ci": [
+              -0.008444428617577177,
+              0.031035652257907324
+            ],
+            "all_paired_mean": 0.011217461851814088,
+            "omission_paired_bootstrap_95ci": [
+              -0.007131222131121453,
+              0.05218275936197291
+            ],
+            "omission_paired_mean": 0.02240584209865284
+          },
+          "exam_improvement": {
+            "all_paired_bootstrap_95ci": [
+              0.01334490106032865,
+              0.03952714336253561
+            ],
+            "all_paired_mean": 0.025499297482537698,
+            "omission_paired_bootstrap_95ci": [
+              0.021220334714341295,
+              0.06062513533031635
+            ],
+            "omission_paired_mean": 0.039687414551987606
+          },
+          "gmar_f_delta": {
+            "all_paired_bootstrap_95ci": [
+              0.01207938629750427,
+              0.06069029281975939
+            ],
+            "all_paired_mean": 0.03521870537902606,
+            "omission_paired_bootstrap_95ci": [
+              0.017025626979637214,
+              0.0891418846154059
+            ],
+            "omission_paired_mean": 0.05134205605602655
+          },
+          "topk": {
+            "1": {
+              "exact_sign_p": 0.5078125,
+              "gains": 3,
+              "losses": 6,
+              "net": -3
+            },
+            "5": {
+              "exact_sign_p": 0.01181793212890625,
+              "gains": 16,
+              "losses": 4,
+              "net": 12
+            },
+            "10": {
+              "exact_sign_p": 0.15158963203430176,
+              "gains": 16,
+              "losses": 8,
+              "net": 8
+            },
+            "20": {
+              "exact_sign_p": 0.005924612283706665,
+              "gains": 21,
+              "losses": 6,
+              "net": 15
+            }
+          }
+        },
+        "Time": {
+          "bugs": 368,
+          "deleted_evaluable": 322,
+          "official_evaluable": 350,
+          "paired": 319,
+          "paired_omission": 195,
+          "evaluability_gain": 28,
+          "mrr_delta": {
+            "all_paired_bootstrap_95ci": [
+              -0.0008267749033651771,
+              0.03614375228494949
+            ],
+            "all_paired_mean": 0.017455271838003807,
+            "omission_paired_bootstrap_95ci": [
+              0.005900039806194154,
+              0.061759109430426465
+            ],
+            "omission_paired_mean": 0.033336863290227635
+          },
+          "exam_improvement": {
+            "all_paired_bootstrap_95ci": [
+              0.01614216554057259,
+              0.04456345134260294
+            ],
+            "all_paired_mean": 0.029593266666523094,
+            "omission_paired_bootstrap_95ci": [
+              0.026867574803321,
+              0.07074664754827538
+            ],
+            "omission_paired_mean": 0.04745288637237693
+          },
+          "gmar_f_delta": {
+            "all_paired_bootstrap_95ci": [
+              0.018639044499930413,
+              0.0672848580660604
+            ],
+            "all_paired_mean": 0.041892868085176255,
+            "omission_paired_bootstrap_95ci": [
+              0.02762789405286689,
+              0.10562265054143187
+            ],
+            "omission_paired_mean": 0.06484601971864112
+          },
+          "topk": {
+            "1": {
+              "exact_sign_p": 1.0,
+              "gains": 3,
+              "losses": 3,
+              "net": 0
+            },
+            "5": {
+              "exact_sign_p": 0.010622024536132812,
+              "gains": 18,
+              "losses": 5,
+              "net": 13
+            },
+            "10": {
+              "exact_sign_p": 0.13604594767093658,
+              "gains": 19,
+              "losses": 10,
+              "net": 9
+            },
+            "20": {
+              "exact_sign_p": 0.002315700054168701,
+              "gains": 23,
+              "losses": 6,
+              "net": 17
+            }
+          }
+        }
+      },
+      "topk_dominance": {
+        "1": {
+          "by_project": {
+            "Chart": {
+              "gains": 0,
+              "losses": 0,
+              "net": 0
+            },
+            "Closure": {
+              "gains": 2,
+              "losses": 1,
+              "net": 1
+            },
+            "Lang": {
+              "gains": 0,
+              "losses": 1,
+              "net": -1
+            },
+            "Math": {
+              "gains": 1,
+              "losses": 1,
+              "net": 0
+            },
+            "Mockito": {
+              "gains": 0,
+              "losses": 0,
+              "net": 0
+            },
+            "Time": {
+              "gains": 0,
+              "losses": 3,
+              "net": -3
+            }
+          },
+          "largest_discordant_project": "Closure",
+          "largest_discordant_share": 0.3333333333333333,
+          "largest_gain_project": "Closure",
+          "largest_gain_share": 0.6666666666666666,
+          "largest_positive_net_project": "Closure",
+          "largest_positive_net_share": 1.0,
+          "largest_net_over_total_net": -0.3333333333333333,
+          "positive_net_total": 1,
+          "total_discordant": 9,
+          "total_gains": 3,
+          "total_losses": 6,
+          "total_net": -3
+        },
+        "5": {
+          "by_project": {
+            "Chart": {
+              "gains": 0,
+              "losses": 0,
+              "net": 0
+            },
+            "Closure": {
+              "gains": 7,
+              "losses": 2,
+              "net": 5
+            },
+            "Lang": {
+              "gains": 2,
+              "losses": 1,
+              "net": 1
+            },
+            "Math": {
+              "gains": 5,
+              "losses": 1,
+              "net": 4
+            },
+            "Mockito": {
+              "gains": 4,
+              "losses": 1,
+              "net": 3
+            },
+            "Time": {
+              "gains": 2,
+              "losses": 0,
+              "net": 2
+            }
+          },
+          "largest_discordant_project": "Closure",
+          "largest_discordant_share": 0.36,
+          "largest_gain_project": "Closure",
+          "largest_gain_share": 0.35,
+          "largest_positive_net_project": "Closure",
+          "largest_positive_net_share": 0.3333333333333333,
+          "largest_net_over_total_net": 0.3333333333333333,
+          "positive_net_total": 15,
+          "total_discordant": 25,
+          "total_gains": 20,
+          "total_losses": 5,
+          "total_net": 15
+        },
+        "10": {
+          "by_project": {
+            "Chart": {
+              "gains": 0,
+              "losses": 0,
+              "net": 0
+            },
+            "Closure": {
+              "gains": 10,
+              "losses": 4,
+              "net": 6
+            },
+            "Lang": {
+              "gains": 0,
+              "losses": 2,
+              "net": -2
+            },
+            "Math": {
+              "gains": 5,
+              "losses": 2,
+              "net": 3
+            },
+            "Mockito": {
+              "gains": 4,
+              "losses": 2,
+              "net": 2
+            },
+            "Time": {
+              "gains": 1,
+              "losses": 0,
+              "net": 1
+            }
+          },
+          "largest_discordant_project": "Closure",
+          "largest_discordant_share": 0.4666666666666667,
+          "largest_gain_project": "Closure",
+          "largest_gain_share": 0.5,
+          "largest_positive_net_project": "Closure",
+          "largest_positive_net_share": 0.5,
+          "largest_net_over_total_net": 0.6,
+          "positive_net_total": 12,
+          "total_discordant": 30,
+          "total_gains": 20,
+          "total_losses": 10,
+          "total_net": 10
+        },
+        "20": {
+          "by_project": {
+            "Chart": {
+              "gains": 1,
+              "losses": 0,
+              "net": 1
+            },
+            "Closure": {
+              "gains": 13,
+              "losses": 4,
+              "net": 9
+            },
+            "Lang": {
+              "gains": 0,
+              "losses": 0,
+              "net": 0
+            },
+            "Math": {
+              "gains": 6,
+              "losses": 2,
+              "net": 4
+            },
+            "Mockito": {
+              "gains": 3,
+              "losses": 0,
+              "net": 3
+            },
+            "Time": {
+              "gains": 1,
+              "losses": 0,
+              "net": 1
+            }
+          },
+          "largest_discordant_project": "Closure",
+          "largest_discordant_share": 0.5666666666666667,
+          "largest_gain_project": "Closure",
+          "largest_gain_share": 0.5416666666666666,
+          "largest_positive_net_project": "Closure",
+          "largest_positive_net_share": 0.5,
+          "largest_net_over_total_net": 0.5,
+          "positive_net_total": 18,
+          "total_discordant": 30,
+          "total_gains": 24,
+          "total_losses": 6,
+          "total_net": 18
+        }
+      },
+      "lopo_direction_summary": {
+        "mrr_delta": {
+          "all_paired": {
+            "all_nonnegative": true,
+            "maximum": 0.017524391923331235,
+            "minimum": 0.0064779022423849
+          },
+          "omission_paired": {
+            "all_nonnegative": true,
+            "maximum": 0.03335734385457391,
+            "minimum": 0.014087896374463432
+          }
+        },
+        "exam_improvement": {
+          "all_paired": {
+            "all_nonnegative": true,
+            "maximum": 0.032563631619357575,
+            "minimum": 0.025499297482537698
+          },
+          "omission_paired": {
+            "all_nonnegative": true,
+            "maximum": 0.051937327453479974,
+            "minimum": 0.037827485291740695
+          }
+        },
+        "gmar_f_delta": {
+          "all_paired": {
+            "all_nonnegative": true,
+            "maximum": 0.05169668529477634,
+            "minimum": 0.03521870537902606
+          },
+          "omission_paired": {
+            "all_nonnegative": true,
+            "maximum": 0.07937099560020075,
+            "minimum": 0.046887447344343865
+          }
+        }
+      }
+    },
+    "barinel": {
+      "all_projects_pooled": {
+        "bugs": 395,
+        "deleted_evaluable": 348,
+        "official_evaluable": 376,
+        "paired": 345,
+        "paired_omission": 217,
+        "evaluability_gain": 28,
+        "mrr_delta": {
+          "all_paired_bootstrap_95ci": [
+            -0.005315526097693687,
+            0.031520887403671906
+          ],
+          "all_paired_mean": 0.013007916719350717,
+          "omission_paired_bootstrap_95ci": [
+            -0.002791626173574766,
+            0.05304432988276013
+          ],
+          "omission_paired_mean": 0.02497782439376577
+        },
+        "exam_improvement": {
+          "all_paired_bootstrap_95ci": [
+            0.016377600775539913,
+            0.04337552777797809
+          ],
+          "all_paired_mean": 0.028987265597415594,
+          "omission_paired_bootstrap_95ci": [
+            0.026279088192721435,
+            0.06640477996838784
+          ],
+          "omission_paired_mean": 0.045224273765442455
+        },
+        "gmar_f_delta": {
+          "all_paired_bootstrap_95ci": [
+            0.01847883703540387,
+            0.06543821977542968
+          ],
+          "all_paired_mean": 0.04099304014183488,
+          "omission_paired_bootstrap_95ci": [
+            0.026578661772405306,
+            0.09777205045327594
+          ],
+          "omission_paired_mean": 0.060814736750652396
+        },
+        "topk": {
+          "1": {
+            "exact_sign_p": 0.5078125,
+            "gains": 3,
+            "losses": 6,
+            "net": -3
+          },
+          "5": {
+            "exact_sign_p": 0.004077315330505371,
+            "gains": 20,
+            "losses": 5,
+            "net": 15
+          },
+          "10": {
+            "exact_sign_p": 0.09873714670538902,
+            "gains": 20,
+            "losses": 10,
+            "net": 10
+          },
+          "20": {
+            "exact_sign_p": 0.001430906355381012,
+            "gains": 24,
+            "losses": 6,
+            "net": 18
+          }
+        }
+      },
+      "by_project": {
+        "Chart": {
+          "bugs": 26,
+          "deleted_evaluable": 24,
+          "official_evaluable": 24,
+          "paired": 23,
+          "paired_omission": 12,
+          "evaluability_gain": 0,
+          "mrr_delta": {
+            "all_paired_bootstrap_95ci": [
+              0.0,
+              0.012973865644748226
+            ],
+            "all_paired_mean": 0.004761605010089779,
+            "omission_paired_bootstrap_95ci": [
+              0.0,
+              0.024866575819100765
+            ],
+            "omission_paired_mean": 0.009126409602672076
+          },
+          "exam_improvement": {
+            "all_paired_bootstrap_95ci": [
+              0.0,
+              0.07857304761444048
+            ],
+            "all_paired_mean": 0.02746978824999678,
+            "omission_paired_bootstrap_95ci": [
+              0.0,
+              0.15059834126101088
+            ],
+            "omission_paired_mean": 0.052650427479160496
+          },
+          "gmar_f_delta": {
+            "all_paired_bootstrap_95ci": [
+              0.0011882699490499402,
+              0.19723261768100925
+            ],
+            "all_paired_mean": 0.08217375442289414,
+            "omission_paired_bootstrap_95ci": [
+              0.004636588207387428,
+              0.3640545959895276
+            ],
+            "omission_paired_mean": 0.157344657486577
+          },
+          "topk": {
+            "1": {
+              "exact_sign_p": 1.0,
+              "gains": 0,
+              "losses": 0,
+              "net": 0
+            },
+            "5": {
+              "exact_sign_p": 1.0,
+              "gains": 0,
+              "losses": 0,
+              "net": 0
+            },
+            "10": {
+              "exact_sign_p": 1.0,
+              "gains": 0,
+              "losses": 0,
+              "net": 0
+            },
+            "20": {
+              "exact_sign_p": 1.0,
+              "gains": 1,
+              "losses": 0,
+              "net": 1
+            }
+          }
+        },
+        "Closure": {
+          "bugs": 133,
+          "deleted_evaluable": 108,
+          "official_evaluable": 126,
+          "paired": 107,
+          "paired_omission": 71,
+          "evaluability_gain": 18,
+          "mrr_delta": {
+            "all_paired_bootstrap_95ci": [
+              -0.008391821778827777,
+              0.06588737643931186
+            ],
+            "all_paired_mean": 0.027532621817648515,
+            "omission_paired_bootstrap_95ci": [
+              -0.014310761737568692,
+              0.09590220518173419
+            ],
+            "omission_paired_mean": 0.039097823845065965
+          },
+          "exam_improvement": {
+            "all_paired_bootstrap_95ci": [
+              0.0043225296395036795,
+              0.04997996308062481
+            ],
+            "all_paired_mean": 0.02485409957676886,
+            "omission_paired_bootstrap_95ci": [
+              0.008197256526351941,
+              0.06785427290893206
+            ],
+            "omission_paired_mean": 0.03442062629385233
+          },
+          "gmar_f_delta": {
+            "all_paired_bootstrap_95ci": [
+              -0.0024908218863519144,
+              0.08382709371340004
+            ],
+            "all_paired_mean": 0.03675355468270402,
+            "omission_paired_bootstrap_95ci": [
+              -0.009082788590265454,
+              0.10603286120967764
+            ],
+            "omission_paired_mean": 0.04352129058350306
+          },
+          "topk": {
+            "1": {
+              "exact_sign_p": 1.0,
+              "gains": 2,
+              "losses": 1,
+              "net": 1
+            },
+            "5": {
+              "exact_sign_p": 0.1796875,
+              "gains": 7,
+              "losses": 2,
+              "net": 5
+            },
+            "10": {
+              "exact_sign_p": 0.1795654296875,
+              "gains": 10,
+              "losses": 4,
+              "net": 6
+            },
+            "20": {
+              "exact_sign_p": 0.049041748046875,
+              "gains": 13,
+              "losses": 4,
+              "net": 9
+            }
+          }
+        },
+        "Lang": {
+          "bugs": 65,
+          "deleted_evaluable": 56,
+          "official_evaluable": 59,
+          "paired": 55,
+          "paired_omission": 39,
+          "evaluability_gain": 3,
+          "mrr_delta": {
+            "all_paired_bootstrap_95ci": [
+              -0.05177256450003083,
+              0.026408885232414643
+            ],
+            "all_paired_mean": -0.0108062276901215,
+            "omission_paired_bootstrap_95ci": [
+              -0.07227700761486575,
+              0.03998136666744454
+            ],
+            "omission_paired_mean": -0.013267165282912963
+          },
+          "exam_improvement": {
+            "all_paired_bootstrap_95ci": [
+              -0.0019976128268951953,
+              0.030789831948957475
+            ],
+            "all_paired_mean": 0.010129579788462401,
+            "omission_paired_bootstrap_95ci": [
+              -0.002366666588342368,
+              0.04316552801728575
+            ],
+            "omission_paired_mean": 0.014584526852623748
+          },
+          "gmar_f_delta": {
+            "all_paired_bootstrap_95ci": [
+              -0.04594576996421647,
+              0.01279618372564903
+            ],
+            "all_paired_mean": -0.015536732256138963,
+            "omission_paired_bootstrap_95ci": [
+              -0.06653552435406307,
+              0.016353216701136382
+            ],
+            "omission_paired_mean": -0.02388121962603841
+          },
+          "topk": {
+            "1": {
+              "exact_sign_p": 1.0,
+              "gains": 0,
+              "losses": 1,
+              "net": -1
+            },
+            "5": {
+              "exact_sign_p": 1.0,
+              "gains": 2,
+              "losses": 1,
+              "net": 1
+            },
+            "10": {
+              "exact_sign_p": 0.5,
+              "gains": 0,
+              "losses": 2,
+              "net": -2
+            },
+            "20": {
+              "exact_sign_p": 1.0,
+              "gains": 0,
+              "losses": 0,
+              "net": 0
+            }
+          }
+        },
+        "Math": {
+          "bugs": 106,
+          "deleted_evaluable": 100,
+          "official_evaluable": 104,
+          "paired": 100,
+          "paired_omission": 51,
+          "evaluability_gain": 4,
+          "mrr_delta": {
+            "all_paired_bootstrap_95ci": [
+              -0.011680416304330928,
+              0.05372203212354125
+            ],
+            "all_paired_mean": 0.021079664240308677,
+            "omission_paired_bootstrap_95ci": [
+              0.017141890334995573,
+              0.11583442553611858
+            ],
+            "omission_paired_mean": 0.060423469841561196
+          },
+          "exam_improvement": {
+            "all_paired_bootstrap_95ci": [
+              0.011010280858875872,
+              0.06482265226434268
+            ],
+            "all_paired_mean": 0.035216594260105885,
+            "omission_paired_bootstrap_95ci": [
+              0.023090177709777907,
+              0.1247713593938514
+            ],
+            "omission_paired_mean": 0.06929957403025111
+          },
+          "gmar_f_delta": {
+            "all_paired_bootstrap_95ci": [
+              0.009531939045170006,
+              0.10175302217093572
+            ],
+            "all_paired_mean": 0.05216297789498115,
+            "omission_paired_bootstrap_95ci": [
+              0.02431235558129563,
+              0.2003780200389848
+            ],
+            "omission_paired_mean": 0.10614418416194418
+          },
+          "topk": {
+            "1": {
+              "exact_sign_p": 1.0,
+              "gains": 1,
+              "losses": 1,
+              "net": 0
+            },
+            "5": {
+              "exact_sign_p": 0.21875,
+              "gains": 5,
+              "losses": 1,
+              "net": 4
+            },
+            "10": {
+              "exact_sign_p": 0.453125,
+              "gains": 5,
+              "losses": 2,
+              "net": 3
+            },
+            "20": {
+              "exact_sign_p": 0.2890625,
+              "gains": 6,
+              "losses": 2,
+              "net": 4
+            }
+          }
+        },
+        "Mockito": {
+          "bugs": 38,
+          "deleted_evaluable": 34,
+          "official_evaluable": 37,
+          "paired": 34,
+          "paired_omission": 22,
+          "evaluability_gain": 3,
+          "mrr_delta": {
+            "all_paired_bootstrap_95ci": [
+              -0.019783643463138996,
+              0.08173818806222351
+            ],
+            "all_paired_mean": 0.029385308791035136,
+            "omission_paired_bootstrap_95ci": [
+              -0.027908354836359294,
+              0.12610375926003237
+            ],
+            "omission_paired_mean": 0.04777493412923848
+          },
+          "exam_improvement": {
+            "all_paired_bootstrap_95ci": [
+              0.002413006974385908,
+              0.13215659300519475
+            ],
+            "all_paired_mean": 0.06089113355617363,
+            "omission_paired_bootstrap_95ci": [
+              0.005184405968796243,
+              0.1961806811960293
+            ],
+            "omission_paired_mean": 0.09429977256064448
+          },
+          "gmar_f_delta": {
+            "all_paired_bootstrap_95ci": [
+              0.010964554717874475,
+              0.19688218743136582
+            ],
+            "all_paired_mean": 0.09366179672118799,
+            "omission_paired_bootstrap_95ci": [
+              0.020718083042031595,
+              0.2968589214676072
+            ],
+            "omission_paired_mean": 0.14477130547704808
+          },
+          "topk": {
+            "1": {
+              "exact_sign_p": 1.0,
+              "gains": 0,
+              "losses": 0,
+              "net": 0
+            },
+            "5": {
+              "exact_sign_p": 0.375,
+              "gains": 4,
+              "losses": 1,
+              "net": 3
+            },
+            "10": {
+              "exact_sign_p": 0.6875,
+              "gains": 4,
+              "losses": 2,
+              "net": 2
+            },
+            "20": {
+              "exact_sign_p": 0.25,
+              "gains": 3,
+              "losses": 0,
+              "net": 3
+            }
+          }
+        },
+        "Time": {
+          "bugs": 27,
+          "deleted_evaluable": 26,
+          "official_evaluable": 26,
+          "paired": 26,
+          "paired_omission": 22,
+          "evaluability_gain": 0,
+          "mrr_delta": {
+            "all_paired_bootstrap_95ci": [
+              -0.13906498100010156,
+              0.043682220427873834
+            ],
+            "all_paired_mean": -0.041557714673609164,
+            "omission_paired_bootstrap_95ci": [
+              -0.16258533243594056,
+              0.0512661124661236
+            ],
+            "omission_paired_mean": -0.04911366279608356
+          },
+          "exam_improvement": {
+            "all_paired_bootstrap_95ci": [
+              -0.00034531573122580095,
+              0.06465539064668763
+            ],
+            "all_paired_mean": 0.021551076590702357,
+            "omission_paired_bootstrap_95ci": [
+              -0.0004425488609419888,
+              0.0762895216848743
+            ],
+            "omission_paired_mean": 0.02546945415264824
+          },
+          "gmar_f_delta": {
+            "all_paired_bootstrap_95ci": [
+              -0.03455887536540091,
+              0.11809858182836487
+            ],
+            "all_paired_mean": 0.029757443931779717,
+            "omission_paired_bootstrap_95ci": [
+              -0.050006178009639794,
+              0.12755639853574138
+            ],
+            "omission_paired_mean": 0.025077082103873407
+          },
+          "topk": {
+            "1": {
+              "exact_sign_p": 0.25,
+              "gains": 0,
+              "losses": 3,
+              "net": -3
+            },
+            "5": {
+              "exact_sign_p": 0.5,
+              "gains": 2,
+              "losses": 0,
+              "net": 2
+            },
+            "10": {
+              "exact_sign_p": 1.0,
+              "gains": 1,
+              "losses": 0,
+              "net": 1
+            },
+            "20": {
+              "exact_sign_p": 1.0,
+              "gains": 1,
+              "losses": 0,
+              "net": 1
+            }
+          }
+        }
+      },
+      "equal_project_weighted": {
+        "mrr_delta": {
+          "all_paired_bootstrap_95ci": [
+            -0.015505282361113606,
+            0.02470667709659754
+          ],
+          "all_paired_mean": 0.005065876249225241,
+          "all_paired_project_means": {
+            "Chart": 0.004761605010089779,
+            "Closure": 0.027532621817648515,
+            "Lang": -0.0108062276901215,
+            "Math": 0.021079664240308677,
+            "Mockito": 0.029385308791035136,
+            "Time": -0.041557714673609164
+          },
+          "omission_paired_bootstrap_95ci": [
+            -0.01156564291108872,
+            0.042579411581610174
+          ],
+          "omission_paired_mean": 0.015673634889923533,
+          "omission_paired_project_means": {
+            "Chart": 0.009126409602672076,
+            "Closure": 0.039097823845065965,
+            "Lang": -0.013267165282912963,
+            "Math": 0.060423469841561196,
+            "Mockito": 0.04777493412923848,
+            "Time": -0.04911366279608356
+          }
+        },
+        "exam_improvement": {
+          "all_paired_bootstrap_95ci": [
+            0.01521189700786106,
+            0.047459190846498196
+          ],
+          "all_paired_mean": 0.030018712003701653,
+          "all_paired_project_means": {
+            "Chart": 0.02746978824999678,
+            "Closure": 0.02485409957676886,
+            "Lang": 0.010129579788462401,
+            "Math": 0.035216594260105885,
+            "Mockito": 0.06089113355617363,
+            "Time": 0.021551076590702357
+          },
+          "omission_paired_bootstrap_95ci": [
+            0.02501950822070966,
+            0.075442497308064
+          ],
+          "omission_paired_mean": 0.048454063561530064,
+          "omission_paired_project_means": {
+            "Chart": 0.052650427479160496,
+            "Closure": 0.03442062629385233,
+            "Lang": 0.014584526852623748,
+            "Math": 0.06929957403025111,
+            "Mockito": 0.09429977256064448,
+            "Time": 0.02546945415264824
+          }
+        },
+        "gmar_f_delta": {
+          "all_paired_bootstrap_95ci": [
+            0.01998676393885968,
+            0.07693000631514169
+          ],
+          "all_paired_mean": 0.04649546589956801,
+          "all_paired_project_means": {
+            "Chart": 0.08217375442289414,
+            "Closure": 0.03675355468270402,
+            "Lang": -0.015536732256138963,
+            "Math": 0.05216297789498115,
+            "Mockito": 0.09366179672118799,
+            "Time": 0.029757443931779717
+          },
+          "omission_paired_bootstrap_95ci": [
+            0.03353776640195592,
+            0.12333765155690347
+          ],
+          "omission_paired_mean": 0.07549621669781789,
+          "omission_paired_project_means": {
+            "Chart": 0.157344657486577,
+            "Closure": 0.04352129058350306,
+            "Lang": -0.02388121962603841,
+            "Math": 0.10614418416194418,
+            "Mockito": 0.14477130547704808,
+            "Time": 0.025077082103873407
+          }
+        }
+      },
+      "leave_one_project_out": {
+        "Chart": {
+          "bugs": 369,
+          "deleted_evaluable": 324,
+          "official_evaluable": 352,
+          "paired": 322,
+          "paired_omission": 205,
+          "evaluability_gain": 28,
+          "mrr_delta": {
+            "all_paired_bootstrap_95ci": [
+              -0.005916899585684923,
+              0.033343875731557525
+            ],
+            "all_paired_mean": 0.013596938984297927,
+            "omission_paired_bootstrap_95ci": [
+              -0.0033164135014631807,
+              0.05559785421549912
+            ],
+            "omission_paired_mean": 0.025905712088854182
+          },
+          "exam_improvement": {
+            "all_paired_bootstrap_95ci": [
+              0.01578233706289009,
+              0.0439685288736393
+            ],
+            "all_paired_mean": 0.029095656836516937,
+            "omission_paired_bootstrap_95ci": [
+              0.024960543849581653,
+              0.06717743070258367
+            ],
+            "omission_paired_mean": 0.04478957208463945
+          },
+          "gmar_f_delta": {
+            "all_paired_bootstrap_95ci": [
+              0.015173051634545106,
+              0.06317221873737586
+            ],
+            "all_paired_mean": 0.03805156055033064,
+            "omission_paired_bootstrap_95ci": [
+              0.01982827329685422,
+              0.09290690892703524
+            ],
+            "omission_paired_mean": 0.055164204805134856
+          },
+          "topk": {
+            "1": {
+              "exact_sign_p": 0.5078125,
+              "gains": 3,
+              "losses": 6,
+              "net": -3
+            },
+            "5": {
+              "exact_sign_p": 0.004077315330505371,
+              "gains": 20,
+              "losses": 5,
+              "net": 15
+            },
+            "10": {
+              "exact_sign_p": 0.09873714670538902,
+              "gains": 20,
+              "losses": 10,
+              "net": 10
+            },
+            "20": {
+              "exact_sign_p": 0.002315700054168701,
+              "gains": 23,
+              "losses": 6,
+              "net": 17
+            }
+          }
+        },
+        "Closure": {
+          "bugs": 262,
+          "deleted_evaluable": 240,
+          "official_evaluable": 250,
+          "paired": 238,
+          "paired_omission": 146,
+          "evaluability_gain": 10,
+          "mrr_delta": {
+            "all_paired_bootstrap_95ci": [
+              -0.01457757213440532,
+              0.026961580989615663
+            ],
+            "all_paired_mean": 0.0064779022423849,
+            "omission_paired_bootstrap_95ci": [
+              -0.013069491769072971,
+              0.04908451004268065
+            ],
+            "omission_paired_mean": 0.018111249318133484
+          },
+          "exam_improvement": {
+            "all_paired_bootstrap_95ci": [
+              0.015458289389482158,
+              0.04855973773997357
+            ],
+            "all_paired_mean": 0.0308454536823282,
+            "omission_paired_bootstrap_95ci": [
+              0.025606848912280166,
+              0.07857685192193829
+            ],
+            "omission_paired_mean": 0.05047810233039382
+          },
+          "gmar_f_delta": {
+            "all_paired_bootstrap_95ci": [
+              0.016309119831686595,
+              0.07227224993408245
+            ],
+            "all_paired_mean": 0.042899027302032364,
+            "omission_paired_bootstrap_95ci": [
+              0.02651342956254008,
+              0.11582595502919263
+            ],
+            "omission_paired_mean": 0.0692245633113894
+          },
+          "topk": {
+            "1": {
+              "exact_sign_p": 0.21875,
+              "gains": 1,
+              "losses": 5,
+              "net": -4
+            },
+            "5": {
+              "exact_sign_p": 0.021270751953125,
+              "gains": 13,
+              "losses": 3,
+              "net": 10
+            },
+            "10": {
+              "exact_sign_p": 0.454498291015625,
+              "gains": 10,
+              "losses": 6,
+              "net": 4
+            },
+            "20": {
+              "exact_sign_p": 0.0224609375,
+              "gains": 11,
+              "losses": 2,
+              "net": 9
+            }
+          }
+        },
+        "Lang": {
+          "bugs": 330,
+          "deleted_evaluable": 292,
+          "official_evaluable": 317,
+          "paired": 290,
+          "paired_omission": 178,
+          "evaluability_gain": 25,
+          "mrr_delta": {
+            "all_paired_bootstrap_95ci": [
+              -0.0026046365068901393,
+              0.03827572951887292
+            ],
+            "all_paired_mean": 0.01752439238321614,
+            "omission_paired_bootstrap_95ci": [
+              0.0026091075333643647,
+              0.064924010563518
+            ],
+            "omission_paired_mean": 0.03335734460382459
+          },
+          "exam_improvement": {
+            "all_paired_bootstrap_95ci": [
+              0.018023246227440063,
+              0.04930101534225505
+            ],
+            "all_paired_mean": 0.03256372325083775,
+            "omission_paired_bootstrap_95ci": [
+              0.028688733872834545,
+              0.07741540053193449
+            ],
+            "omission_paired_mean": 0.05193747674072296
+          },
+          "gmar_f_delta": {
+            "all_paired_bootstrap_95ci": [
+              0.025855779215775268,
+              0.0803896739475701
+            ],
+            "all_paired_mean": 0.051714203872485084,
+            "omission_paired_bootstrap_95ci": [
+              0.03954192931711842,
+              0.12307263958054285
+            ],
+            "omission_paired_mean": 0.07937171595678127
+          },
+          "topk": {
+            "1": {
+              "exact_sign_p": 0.7265625,
+              "gains": 3,
+              "losses": 5,
+              "net": -2
+            },
+            "5": {
+              "exact_sign_p": 0.004343509674072266,
+              "gains": 18,
+              "losses": 4,
+              "net": 14
+            },
+            "10": {
+              "exact_sign_p": 0.03569813817739487,
+              "gains": 20,
+              "losses": 8,
+              "net": 12
+            },
+            "20": {
+              "exact_sign_p": 0.001430906355381012,
+              "gains": 24,
+              "losses": 6,
+              "net": 18
+            }
+          }
+        },
+        "Math": {
+          "bugs": 289,
+          "deleted_evaluable": 248,
+          "official_evaluable": 272,
+          "paired": 245,
+          "paired_omission": 166,
+          "evaluability_gain": 24,
+          "mrr_delta": {
+            "all_paired_bootstrap_95ci": [
+              -0.012490480559543313,
+              0.0315813703160141
+            ],
+            "all_paired_mean": 0.009713325894469918,
+            "omission_paired_bootstrap_95ci": [
+              -0.01831326116829516,
+              0.04673996325135662
+            ],
+            "omission_paired_mean": 0.014087897177876814
+          },
+          "exam_improvement": {
+            "all_paired_bootstrap_95ci": [
+              0.012067138826557522,
+              0.04277080912268803
+            ],
+            "all_paired_mean": 0.0264446824697869,
+            "omission_paired_bootstrap_95ci": [
+              0.018175817665408503,
+              0.060534595122868275
+            ],
+            "omission_paired_mean": 0.03782764537083257
+          },
+          "gmar_f_delta": {
+            "all_paired_bootstrap_95ci": [
+              0.010690167018006593,
+              0.06500965475446076
+            ],
+            "all_paired_mean": 0.03643388187524456,
+            "omission_paired_bootstrap_95ci": [
+              0.011049094506754308,
+              0.0880681626338336
+            ],
+            "omission_paired_mean": 0.046888219774894074
+          },
+          "topk": {
+            "1": {
+              "exact_sign_p": 0.453125,
+              "gains": 2,
+              "losses": 5,
+              "net": -3
+            },
+            "5": {
+              "exact_sign_p": 0.0192108154296875,
+              "gains": 15,
+              "losses": 4,
+              "net": 11
+            },
+            "10": {
+              "exact_sign_p": 0.21003961563110352,
+              "gains": 15,
+              "losses": 8,
+              "net": 7
+            },
+            "20": {
+              "exact_sign_p": 0.004343509674072266,
+              "gains": 18,
+              "losses": 4,
+              "net": 14
+            }
+          }
+        },
+        "Mockito": {
+          "bugs": 357,
+          "deleted_evaluable": 314,
+          "official_evaluable": 339,
+          "paired": 311,
+          "paired_omission": 195,
+          "evaluability_gain": 25,
+          "mrr_delta": {
+            "all_paired_bootstrap_95ci": [
+              -0.008469065160601814,
+              0.030483748529228444
+            ],
+            "all_paired_mean": 0.011217462280645669,
+            "omission_paired_bootstrap_95ci": [
+              -0.006970061865593697,
+              0.052698856097166326
+            ],
+            "omission_paired_mean": 0.022405842782584236
+          },
+          "exam_improvement": {
+            "all_paired_bootstrap_95ci": [
+              0.01320273352894306,
+              0.03930205232013962
+            ],
+            "all_paired_mean": 0.025499382926683203,
+            "omission_paired_bootstrap_95ci": [
+              0.020776665452892737,
+              0.06116114789008821
+            ],
+            "omission_paired_mean": 0.039687550824445306
+          },
+          "gmar_f_delta": {
+            "all_paired_bootstrap_95ci": [
+              0.012423936235040421,
+              0.06003815535486659
+            ],
+            "all_paired_mean": 0.03523504103026573,
+            "omission_paired_bootstrap_95ci": [
+              0.016484225556220294,
+              0.08899527907063007
+            ],
+            "omission_paired_mean": 0.05134271361228981
+          },
+          "topk": {
+            "1": {
+              "exact_sign_p": 0.5078125,
+              "gains": 3,
+              "losses": 6,
+              "net": -3
+            },
+            "5": {
+              "exact_sign_p": 0.01181793212890625,
+              "gains": 16,
+              "losses": 4,
+              "net": 12
+            },
+            "10": {
+              "exact_sign_p": 0.15158963203430176,
+              "gains": 16,
+              "losses": 8,
+              "net": 8
+            },
+            "20": {
+              "exact_sign_p": 0.005924612283706665,
+              "gains": 21,
+              "losses": 6,
+              "net": 15
+            }
+          }
+        },
+        "Time": {
+          "bugs": 368,
+          "deleted_evaluable": 322,
+          "official_evaluable": 350,
+          "paired": 319,
+          "paired_omission": 195,
+          "evaluability_gain": 28,
+          "mrr_delta": {
+            "all_paired_bootstrap_95ci": [
+              -0.0008409332732851976,
+              0.036237553726496945
+            ],
+            "all_paired_mean": 0.01745527225608099,
+            "omission_paired_bootstrap_95ci": [
+              0.005585268794156695,
+              0.061637097034067716
+            ],
+            "omission_paired_mean": 0.033336863974159026
+          },
+          "exam_improvement": {
+            "all_paired_bootstrap_95ci": [
+              0.01631672824471167,
+              0.04447894749209027
+            ],
+            "all_paired_mean": 0.02959334996786871,
+            "omission_paired_bootstrap_95ci": [
+              0.026890020148305153,
+              0.07037227011611023
+            ],
+            "omission_paired_mean": 0.04745302264483463
+          },
+          "gmar_f_delta": {
+            "all_paired_bootstrap_95ci": [
+              0.01854692979914647,
+              0.06740823442558708
+            ],
+            "all_paired_mean": 0.04190879406491147,
+            "omission_paired_bootstrap_95ci": [
+              0.028410311259251152,
+              0.10547898784239643
+            ],
+            "omission_paired_mean": 0.06484667727490438
+          },
+          "topk": {
+            "1": {
+              "exact_sign_p": 1.0,
+              "gains": 3,
+              "losses": 3,
+              "net": 0
+            },
+            "5": {
+              "exact_sign_p": 0.010622024536132812,
+              "gains": 18,
+              "losses": 5,
+              "net": 13
+            },
+            "10": {
+              "exact_sign_p": 0.13604594767093658,
+              "gains": 19,
+              "losses": 10,
+              "net": 9
+            },
+            "20": {
+              "exact_sign_p": 0.002315700054168701,
+              "gains": 23,
+              "losses": 6,
+              "net": 17
+            }
+          }
+        }
+      },
+      "topk_dominance": {
+        "1": {
+          "by_project": {
+            "Chart": {
+              "gains": 0,
+              "losses": 0,
+              "net": 0
+            },
+            "Closure": {
+              "gains": 2,
+              "losses": 1,
+              "net": 1
+            },
+            "Lang": {
+              "gains": 0,
+              "losses": 1,
+              "net": -1
+            },
+            "Math": {
+              "gains": 1,
+              "losses": 1,
+              "net": 0
+            },
+            "Mockito": {
+              "gains": 0,
+              "losses": 0,
+              "net": 0
+            },
+            "Time": {
+              "gains": 0,
+              "losses": 3,
+              "net": -3
+            }
+          },
+          "largest_discordant_project": "Closure",
+          "largest_discordant_share": 0.3333333333333333,
+          "largest_gain_project": "Closure",
+          "largest_gain_share": 0.6666666666666666,
+          "largest_positive_net_project": "Closure",
+          "largest_positive_net_share": 1.0,
+          "largest_net_over_total_net": -0.3333333333333333,
+          "positive_net_total": 1,
+          "total_discordant": 9,
+          "total_gains": 3,
+          "total_losses": 6,
+          "total_net": -3
+        },
+        "5": {
+          "by_project": {
+            "Chart": {
+              "gains": 0,
+              "losses": 0,
+              "net": 0
+            },
+            "Closure": {
+              "gains": 7,
+              "losses": 2,
+              "net": 5
+            },
+            "Lang": {
+              "gains": 2,
+              "losses": 1,
+              "net": 1
+            },
+            "Math": {
+              "gains": 5,
+              "losses": 1,
+              "net": 4
+            },
+            "Mockito": {
+              "gains": 4,
+              "losses": 1,
+              "net": 3
+            },
+            "Time": {
+              "gains": 2,
+              "losses": 0,
+              "net": 2
+            }
+          },
+          "largest_discordant_project": "Closure",
+          "largest_discordant_share": 0.36,
+          "largest_gain_project": "Closure",
+          "largest_gain_share": 0.35,
+          "largest_positive_net_project": "Closure",
+          "largest_positive_net_share": 0.3333333333333333,
+          "largest_net_over_total_net": 0.3333333333333333,
+          "positive_net_total": 15,
+          "total_discordant": 25,
+          "total_gains": 20,
+          "total_losses": 5,
+          "total_net": 15
+        },
+        "10": {
+          "by_project": {
+            "Chart": {
+              "gains": 0,
+              "losses": 0,
+              "net": 0
+            },
+            "Closure": {
+              "gains": 10,
+              "losses": 4,
+              "net": 6
+            },
+            "Lang": {
+              "gains": 0,
+              "losses": 2,
+              "net": -2
+            },
+            "Math": {
+              "gains": 5,
+              "losses": 2,
+              "net": 3
+            },
+            "Mockito": {
+              "gains": 4,
+              "losses": 2,
+              "net": 2
+            },
+            "Time": {
+              "gains": 1,
+              "losses": 0,
+              "net": 1
+            }
+          },
+          "largest_discordant_project": "Closure",
+          "largest_discordant_share": 0.4666666666666667,
+          "largest_gain_project": "Closure",
+          "largest_gain_share": 0.5,
+          "largest_positive_net_project": "Closure",
+          "largest_positive_net_share": 0.5,
+          "largest_net_over_total_net": 0.6,
+          "positive_net_total": 12,
+          "total_discordant": 30,
+          "total_gains": 20,
+          "total_losses": 10,
+          "total_net": 10
+        },
+        "20": {
+          "by_project": {
+            "Chart": {
+              "gains": 1,
+              "losses": 0,
+              "net": 1
+            },
+            "Closure": {
+              "gains": 13,
+              "losses": 4,
+              "net": 9
+            },
+            "Lang": {
+              "gains": 0,
+              "losses": 0,
+              "net": 0
+            },
+            "Math": {
+              "gains": 6,
+              "losses": 2,
+              "net": 4
+            },
+            "Mockito": {
+              "gains": 3,
+              "losses": 0,
+              "net": 3
+            },
+            "Time": {
+              "gains": 1,
+              "losses": 0,
+              "net": 1
+            }
+          },
+          "largest_discordant_project": "Closure",
+          "largest_discordant_share": 0.5666666666666667,
+          "largest_gain_project": "Closure",
+          "largest_gain_share": 0.5416666666666666,
+          "largest_positive_net_project": "Closure",
+          "largest_positive_net_share": 0.5,
+          "largest_net_over_total_net": 0.5,
+          "positive_net_total": 18,
+          "total_discordant": 30,
+          "total_gains": 24,
+          "total_losses": 6,
+          "total_net": 18
+        }
+      },
+      "lopo_direction_summary": {
+        "mrr_delta": {
+          "all_paired": {
+            "all_nonnegative": true,
+            "maximum": 0.01752439238321614,
+            "minimum": 0.0064779022423849
+          },
+          "omission_paired": {
+            "all_nonnegative": true,
+            "maximum": 0.03335734460382459,
+            "minimum": 0.014087897177876814
+          }
+        },
+        "exam_improvement": {
+          "all_paired": {
+            "all_nonnegative": true,
+            "maximum": 0.03256372325083775,
+            "minimum": 0.025499382926683203
+          },
+          "omission_paired": {
+            "all_nonnegative": true,
+            "maximum": 0.05193747674072296,
+            "minimum": 0.03782764537083257
+          }
+        },
+        "gmar_f_delta": {
+          "all_paired": {
+            "all_nonnegative": true,
+            "maximum": 0.051714203872485084,
+            "minimum": 0.03523504103026573
+          },
+          "omission_paired": {
+            "all_nonnegative": true,
+            "maximum": 0.07937171595678127,
+            "minimum": 0.046888219774894074
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-11 Asia/Shanghai",
+  "checks": [
+    {
+      "repository": "rjust/defects4j",
+      "default_branch": "master",
+      "head_sha": "8c16da8230843cdc918eaf4ddb449637f02b83c6",
+      "tree_truncated": false,
+      "license_endpoint_http": 200,
+      "license": "MIT",
+      "license_files": [
+        "license.txt"
+      ]
+    },
+    {
+      "repository": "atom-sw/fauxpy-experiments",
+      "default_branch": "main",
+      "head_sha": "fd2d8fddce63d2e4ff93150aeff7f9e17d004657",
+      "tree_truncated": false,
+      "license_endpoint_http": 200,
+      "license": "GPL-3.0",
+      "license_files": [
+        "LICENSE",
+        "combinefl/SVMRank/LICENSE.txt",
+        "pytest-FauxPy/LICENSE"
+      ]
+    },
+    {
+      "repository": "squaresLab/LLMAO",
+      "default_branch": "master",
+      "head_sha": "60f9e5c7dfaab920aed22a33b596299c5ce3c429",
+      "tree_truncated": false,
+      "license_endpoint_http": 404,
+      "license": null,
+      "license_files": []
+    },
+    {
+      "repository": "mxx1219/TRANSFER",
+      "default_branch": "master",
+      "head_sha": "c5ff7bd8420a08afb23f44ad5ea3ffe8337d4fdd",
+      "tree_truncated": false,
+      "license_endpoint_http": 404,
+      "license": null,
+      "license_files": []
+    }
+  ],
+  "annotation_source": {
+    "url": "https://bitbucket.org/rjust/fault-localization-data/",
+    "recorded_archive_revision": "db9a70bfeaef",
+    "basis": "No license file found in the frozen local archive; raw annotation files excluded"
+  }
+}

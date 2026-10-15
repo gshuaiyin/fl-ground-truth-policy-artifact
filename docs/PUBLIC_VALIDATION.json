@@ -1,0 +1,106 @@
+{
+  "date": "2026-10-15 Asia/Shanghai",
+  "version": "v3.5.0-public-20261015",
+  "status": "PASS",
+  "isolated_virtual_environment": true,
+  "environment": {
+    "python": "3.13.7",
+    "numpy": "2.3.4",
+    "matplotlib": "3.11.2"
+  },
+  "unit_tests": {
+    "count": 27,
+    "status": "PASS"
+  },
+  "figure_replay": {
+    "exports": 33,
+    "statistical_panels_regenerated": 9,
+    "authored_schematics_copied": 2,
+    "schematics_byte_identical_to_final_exports": true,
+    "frozen_sources_unchanged": true
+  },
+  "frozen_table_comparison": {
+    "status": "PASS",
+    "tables": [
+      {
+        "file": "figure5_controls.csv",
+        "rows": 32
+      },
+      {
+        "file": "figure6_python_change_counts.csv",
+        "rows": 6
+      },
+      {
+        "file": "figure6_python_control.csv",
+        "rows": 6
+      },
+      {
+        "file": "figure6_python_paired_rows.csv",
+        "rows": 360
+      },
+      {
+        "file": "figureS2_project_robustness.csv",
+        "rows": 56
+      },
+      {
+        "file": "figureS3_audit_counts.csv",
+        "rows": 36
+      },
+      {
+        "file": "figureS4_joint_changes.csv",
+        "rows": 1200
+      },
+      {
+        "file": "figureS5_python_policy_effects.csv",
+        "rows": 6
+      },
+      {
+        "file": "holm128_complete.csv",
+        "rows": 128
+      },
+      {
+        "file": "project_contributions.csv",
+        "rows": 24
+      },
+      {
+        "file": "rq1_paired_effects.csv",
+        "rows": 16
+      },
+      {
+        "file": "rq2_exact_expected_means.csv",
+        "rows": 15
+      },
+      {
+        "file": "rq2_per_fault_top10_changes.csv",
+        "rows": 112
+      },
+      {
+        "file": "rq5_joint_pattern_counts.csv",
+        "rows": 5
+      },
+      {
+        "file": "rq5_seed_effects.csv",
+        "rows": 15
+      }
+    ],
+    "errors": [],
+    "tolerance": {
+      "relative": 1e-10,
+      "absolute": 1e-12
+    },
+    "scope": "Frozen figure table values; not upstream input availability or experiment rerun"
+  },
+  "submission_csv_files_unchanged": 17,
+  "analysis_modules_byte_identical_to_previous": 14,
+  "retained_numeric_values_checked": 104735,
+  "numeric_differences": 0,
+  "experimental_results_byte_identical_to_prior_public_projection": true,
+  "final_schematic_visual_review": "Final English Figure 1 and S1 previews reviewed during 2026-10-15 audit; archived/replayed schematic files match those exports byte for byte.",
+  "manuscript_editions": {
+    "chinese": "v3.5.0",
+    "english": "v2.1.0",
+    "jss_latex": "v2.1.0"
+  },
+  "experiments_rerun": false,
+  "scope": "Public frozen-statistical replay and file integrity; not independent end-to-end reproduction, a legal clearance guarantee, or journal certification"
+}

@@ -1,0 +1,7 @@
+﻿formula,metric,paired_n,increased,unchanged,decreased,min_change,max_change
+Ochiai,delta_rr,120,4,116,0,0.0,0.935483870967742
+Ochiai,delta_gmar_a,120,7,100,13,-0.3316226925678941,0.440174176448315
+DStar,delta_rr,120,4,116,0,0.0,0.19444444444444445
+DStar,delta_gmar_a,120,7,100,13,-0.3316226925678941,0.440174176448315
+Tarantula,delta_rr,120,4,116,0,0.0,0.8461538461538461
+Tarantula,delta_gmar_a,120,7,100,13,-0.3316226925678941,0.440174176448315

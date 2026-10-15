@@ -1,0 +1,16 @@
+{
+  "status": "pass",
+  "versions": 40,
+  "exact_versions": 40,
+  "inputs_sha256": {
+    "x.pkl": "aec86d3a0a42a9642f257e8b75b18edf70b3a052ceddd1df6eaf2b11c83107fa",
+    "statements.pkl": "a9aa2c2ce598b5c7b5f01de784b5497041a54275006df50e7a4512515bed0270",
+    "faulty_statement_set.pkl": "7cde5c9409298a4f67975326e81f0372924c40d34a1a6909ee0952705d78440c",
+    "model_params_1.pkl": "666d8b93d025bad831345a0826fa9c62d23af8f3aa4e32300ace0240a259503f",
+    "result_1.txt": "8beb495d6966f9859b766423f25418a3b55d243ff7fd2405beb10b7a30d5ba0c"
+  },
+  "script_sha256": "893dcf437be69f1c9988526e5980ff23abe20f7027cbbc4a7cd227aa95944665",
+  "python": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]",
+  "torch": "2.5.1+cu124",
+  "device": "cuda"
+}

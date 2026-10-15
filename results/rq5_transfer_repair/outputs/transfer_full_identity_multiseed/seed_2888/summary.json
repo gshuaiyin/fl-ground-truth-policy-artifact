@@ -1,0 +1,19 @@
+{
+  "versions": 395,
+  "statement_identities": 593927,
+  "versions_with_fault_rank": 385,
+  "topk": {
+    "1": 92,
+    "3": 154,
+    "5": 179,
+    "10": 219
+  },
+  "official_reported_topk": {
+    "1": 69,
+    "3": 126,
+    "5": 145
+  },
+  "matches_official_top1_top3_top5": false,
+  "mfr": 75.36623376623376,
+  "elapsed_seconds": 149.6246953010559
+}

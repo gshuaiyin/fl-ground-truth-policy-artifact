@@ -1,0 +1,4 @@
+# Preserve exact frozen-file bytes and checksums on every platform.
+* -text
+*.png binary
+*.pdf binary

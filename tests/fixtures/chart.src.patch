@@ -1,0 +1,7 @@
+diff --git a/source/org/example/A.java b/source/org/example/A.java
+--- a/source/org/example/A.java
++++ b/source/org/example/A.java
+@@ -10,2 +10,2 @@
+-old statement
++new statement
+ context

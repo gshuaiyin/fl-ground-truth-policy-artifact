@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-11",
+  "purpose": "Keep author-generated statistical measurements; omit upstream location lists and individual reviewer decisions.",
+  "removed_fields": [
+    [
+      "results/llmao_external_validation/analysis.json",
+      "/rows/*/classpath"
+    ],
+    [
+      "results/llmao_external_validation/analysis.json",
+      "/rows/*/own_targets"
+    ],
+    [
+      "results/manual_audit_36/reviewer_b_full_analysis.json",
+      "/rows and /target_set_agreement/by_bug"
+    ],
+    [
+      "results/revision_v140/run_20260910_r3/analysis.json",
+      "/catalogue"
+    ],
+    [
+      "results/revision_v140/run_20260910_r3/analysis.json",
+      "/corrected_target_groups"
+    ],
+    [
+      "results/rq5_transfer_repair/outputs/transfer_full_identity_multiseed_analysis_v2/analysis.json",
+      "/seed_results/*/rows/*/broad/mapped_locations"
+    ],
+    [
+      "results/rq5_transfer_repair/outputs/transfer_full_identity_multiseed_analysis_v2/analysis.json",
+      "/seed_results/*/rows/*/direct/mapped_locations"
+    ],
+    [
+      "results/rq5_transfer_repair/outputs/transfer_full_identity_multiseed_analysis_v2/analysis.json",
+      "/seed_results/*/rows/*/strict/mapped_locations"
+    ],
+    [
+      "results/rq5_transfer_repair/outputs/validation/official_fold1.json",
+      "/rows (upstream per-fault reference ranks)"
+    ]
+  ],
+  "original_review_files_included": false,
+  "manuscript_files_included": false
+}

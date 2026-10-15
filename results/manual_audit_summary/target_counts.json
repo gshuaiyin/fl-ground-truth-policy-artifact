@@ -1,0 +1,293 @@
+{
+  "scope": "Author-generated numerical counts of frozen AST target sets; no reviewer forms or evidence pages.",
+  "audit_changes": [
+    {
+      "bug_id": "Chart-13",
+      "project": "Chart",
+      "fault_type": "direct_only",
+      "raw_targets": 1,
+      "audited_targets": 1,
+      "target_reduction": 0
+    },
+    {
+      "bug_id": "Chart-6",
+      "project": "Chart",
+      "fault_type": "direct_only",
+      "raw_targets": 1,
+      "audited_targets": 1,
+      "target_reduction": 0
+    },
+    {
+      "bug_id": "Chart-25",
+      "project": "Chart",
+      "fault_type": "mixed",
+      "raw_targets": 14,
+      "audited_targets": 6,
+      "target_reduction": 8
+    },
+    {
+      "bug_id": "Chart-5",
+      "project": "Chart",
+      "fault_type": "mixed",
+      "raw_targets": 3,
+      "audited_targets": 3,
+      "target_reduction": 0
+    },
+    {
+      "bug_id": "Chart-14",
+      "project": "Chart",
+      "fault_type": "pure_omission",
+      "raw_targets": 8,
+      "audited_targets": 8,
+      "target_reduction": 0
+    },
+    {
+      "bug_id": "Chart-21",
+      "project": "Chart",
+      "fault_type": "pure_omission",
+      "raw_targets": 6,
+      "audited_targets": 4,
+      "target_reduction": 2
+    },
+    {
+      "bug_id": "Closure-93",
+      "project": "Closure",
+      "fault_type": "direct_only",
+      "raw_targets": 1,
+      "audited_targets": 1,
+      "target_reduction": 0
+    },
+    {
+      "bug_id": "Closure-59",
+      "project": "Closure",
+      "fault_type": "direct_only",
+      "raw_targets": 1,
+      "audited_targets": 1,
+      "target_reduction": 0
+    },
+    {
+      "bug_id": "Closure-117",
+      "project": "Closure",
+      "fault_type": "mixed",
+      "raw_targets": 13,
+      "audited_targets": 8,
+      "target_reduction": 5
+    },
+    {
+      "bug_id": "Closure-45",
+      "project": "Closure",
+      "fault_type": "mixed",
+      "raw_targets": 10,
+      "audited_targets": 5,
+      "target_reduction": 5
+    },
+    {
+      "bug_id": "Closure-98",
+      "project": "Closure",
+      "fault_type": "pure_omission",
+      "raw_targets": 5,
+      "audited_targets": 1,
+      "target_reduction": 4
+    },
+    {
+      "bug_id": "Closure-84",
+      "project": "Closure",
+      "fault_type": "pure_omission",
+      "raw_targets": 6,
+      "audited_targets": 4,
+      "target_reduction": 2
+    },
+    {
+      "bug_id": "Lang-20",
+      "project": "Lang",
+      "fault_type": "direct_only",
+      "raw_targets": 2,
+      "audited_targets": 2,
+      "target_reduction": 0
+    },
+    {
+      "bug_id": "Lang-24",
+      "project": "Lang",
+      "fault_type": "direct_only",
+      "raw_targets": 1,
+      "audited_targets": 1,
+      "target_reduction": 0
+    },
+    {
+      "bug_id": "Lang-36",
+      "project": "Lang",
+      "fault_type": "mixed",
+      "raw_targets": 4,
+      "audited_targets": 4,
+      "target_reduction": 0
+    },
+    {
+      "bug_id": "Lang-56",
+      "project": "Lang",
+      "fault_type": "mixed",
+      "raw_targets": 2,
+      "audited_targets": 0,
+      "target_reduction": 2
+    },
+    {
+      "bug_id": "Lang-3",
+      "project": "Lang",
+      "fault_type": "pure_omission",
+      "raw_targets": 4,
+      "audited_targets": 4,
+      "target_reduction": 0
+    },
+    {
+      "bug_id": "Lang-2",
+      "project": "Lang",
+      "fault_type": "pure_omission",
+      "raw_targets": 5,
+      "audited_targets": 5,
+      "target_reduction": 0
+    },
+    {
+      "bug_id": "Math-5",
+      "project": "Math",
+      "fault_type": "direct_only",
+      "raw_targets": 1,
+      "audited_targets": 1,
+      "target_reduction": 0
+    },
+    {
+      "bug_id": "Math-67",
+      "project": "Math",
+      "fault_type": "direct_only",
+      "raw_targets": 2,
+      "audited_targets": 2,
+      "target_reduction": 0
+    },
+    {
+      "bug_id": "Math-37",
+      "project": "Math",
+      "fault_type": "mixed",
+      "raw_targets": 16,
+      "audited_targets": 10,
+      "target_reduction": 6
+    },
+    {
+      "bug_id": "Math-86",
+      "project": "Math",
+      "fault_type": "mixed",
+      "raw_targets": 7,
+      "audited_targets": 4,
+      "target_reduction": 3
+    },
+    {
+      "bug_id": "Math-25",
+      "project": "Math",
+      "fault_type": "pure_omission",
+      "raw_targets": 1,
+      "audited_targets": 1,
+      "target_reduction": 0
+    },
+    {
+      "bug_id": "Math-28",
+      "project": "Math",
+      "fault_type": "pure_omission",
+      "raw_targets": 17,
+      "audited_targets": 4,
+      "target_reduction": 13
+    },
+    {
+      "bug_id": "Mockito-26",
+      "project": "Mockito",
+      "fault_type": "direct_only",
+      "raw_targets": 1,
+      "audited_targets": 1,
+      "target_reduction": 0
+    },
+    {
+      "bug_id": "Mockito-6",
+      "project": "Mockito",
+      "fault_type": "direct_only",
+      "raw_targets": 20,
+      "audited_targets": 20,
+      "target_reduction": 0
+    },
+    {
+      "bug_id": "Mockito-16",
+      "project": "Mockito",
+      "fault_type": "mixed",
+      "raw_targets": 5,
+      "audited_targets": 4,
+      "target_reduction": 1
+    },
+    {
+      "bug_id": "Mockito-33",
+      "project": "Mockito",
+      "fault_type": "mixed",
+      "raw_targets": 1,
+      "audited_targets": 1,
+      "target_reduction": 0
+    },
+    {
+      "bug_id": "Mockito-2",
+      "project": "Mockito",
+      "fault_type": "pure_omission",
+      "raw_targets": 2,
+      "audited_targets": 2,
+      "target_reduction": 0
+    },
+    {
+      "bug_id": "Mockito-15",
+      "project": "Mockito",
+      "fault_type": "pure_omission",
+      "raw_targets": 1,
+      "audited_targets": 1,
+      "target_reduction": 0
+    },
+    {
+      "bug_id": "Time-11",
+      "project": "Time",
+      "fault_type": "direct_only",
+      "raw_targets": 4,
+      "audited_targets": 2,
+      "target_reduction": 2
+    },
+    {
+      "bug_id": "Time-4",
+      "project": "Time",
+      "fault_type": "direct_only",
+      "raw_targets": 1,
+      "audited_targets": 1,
+      "target_reduction": 0
+    },
+    {
+      "bug_id": "Time-1",
+      "project": "Time",
+      "fault_type": "mixed",
+      "raw_targets": 6,
+      "audited_targets": 5,
+      "target_reduction": 1
+    },
+    {
+      "bug_id": "Time-8",
+      "project": "Time",
+      "fault_type": "mixed",
+      "raw_targets": 6,
+      "audited_targets": 4,
+      "target_reduction": 2
+    },
+    {
+      "bug_id": "Time-6",
+      "project": "Time",
+      "fault_type": "pure_omission",
+      "raw_targets": 8,
+      "audited_targets": 7,
+      "target_reduction": 1
+    },
+    {
+      "bug_id": "Time-15",
+      "project": "Time",
+      "fault_type": "pure_omission",
+      "raw_targets": 1,
+      "audited_targets": 1,
+      "target_reduction": 0
+    }
+  ]
+}

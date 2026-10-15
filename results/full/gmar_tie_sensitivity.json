@@ -1,0 +1,166 @@
+{
+  "formula_orders": {
+    "optimistic_tie_start": [
+      "ochiai",
+      "dstar",
+      "tarantula",
+      "barinel"
+    ],
+    "midrank_ceiling": [
+      "dstar",
+      "ochiai",
+      "barinel",
+      "tarantula"
+    ],
+    "full_tie_expanded": [
+      "dstar",
+      "ochiai",
+      "barinel",
+      "tarantula"
+    ]
+  },
+  "formula_policy_results": [
+    {
+      "formula": "ochiai",
+      "mean_gmar": 0.9429093727350666,
+      "n": 376,
+      "policy": "optimistic_tie_start",
+      "tied_first_target_rate": 0.848404255319149
+    },
+    {
+      "formula": "ochiai",
+      "mean_gmar": 0.9179419877680147,
+      "n": 376,
+      "policy": "midrank_ceiling",
+      "tied_first_target_rate": 0.848404255319149
+    },
+    {
+      "formula": "ochiai",
+      "mean_gmar": 0.8973680226669604,
+      "n": 376,
+      "policy": "full_tie_expanded",
+      "tied_first_target_rate": 0.848404255319149
+    },
+    {
+      "formula": "dstar",
+      "mean_gmar": 0.9428790132673687,
+      "n": 376,
+      "policy": "optimistic_tie_start",
+      "tied_first_target_rate": 0.8457446808510638
+    },
+    {
+      "formula": "dstar",
+      "mean_gmar": 0.9180690511359041,
+      "n": 376,
+      "policy": "midrank_ceiling",
+      "tied_first_target_rate": 0.8457446808510638
+    },
+    {
+      "formula": "dstar",
+      "mean_gmar": 0.897525985836731,
+      "n": 376,
+      "policy": "full_tie_expanded",
+      "tied_first_target_rate": 0.8457446808510638
+    },
+    {
+      "formula": "tarantula",
+      "mean_gmar": 0.9400686325094745,
+      "n": 376,
+      "policy": "optimistic_tie_start",
+      "tied_first_target_rate": 0.8590425531914894
+    },
+    {
+      "formula": "tarantula",
+      "mean_gmar": 0.9117274329887568,
+      "n": 376,
+      "policy": "midrank_ceiling",
+      "tied_first_target_rate": 0.8590425531914894
+    },
+    {
+      "formula": "tarantula",
+      "mean_gmar": 0.887890163649553,
+      "n": 376,
+      "policy": "full_tie_expanded",
+      "tied_first_target_rate": 0.8590425531914894
+    },
+    {
+      "formula": "barinel",
+      "mean_gmar": 0.9400686325094745,
+      "n": 376,
+      "policy": "optimistic_tie_start",
+      "tied_first_target_rate": 0.8590425531914894
+    },
+    {
+      "formula": "barinel",
+      "mean_gmar": 0.9142605745483334,
+      "n": 376,
+      "policy": "midrank_ceiling",
+      "tied_first_target_rate": 0.8590425531914894
+    },
+    {
+      "formula": "barinel",
+      "mean_gmar": 0.8929703730236781,
+      "n": 376,
+      "policy": "full_tie_expanded",
+      "tied_first_target_rate": 0.8590425531914894
+    }
+  ],
+  "ochiai_high_minus_low_multiplicity": {
+    "optimistic_tie_start": {
+      "bootstrap_95ci": [
+        -0.09409624241681636,
+        -0.018761257868290637
+      ],
+      "high_minus_low_mean": -0.054159811811125835,
+      "n_high": 101,
+      "n_low": 144
+    },
+    "midrank_ceiling": {
+      "bootstrap_95ci": [
+        -0.11322687330745584,
+        -0.026688867979566155
+      ],
+      "high_minus_low_mean": -0.06849491356700954,
+      "n_high": 101,
+      "n_low": 144
+    },
+    "full_tie_expanded": {
+      "bootstrap_95ci": [
+        -0.12773727059265272,
+        -0.023539461328938138
+      ],
+      "high_minus_low_mean": -0.07524814142282088,
+      "n_high": 101,
+      "n_low": 144
+    }
+  },
+  "paired_dstar_minus_ochiai": {
+    "optimistic_tie_start": {
+      "bootstrap_95ci": [
+        -0.0045147147786010365,
+        0.003683037976506827
+      ],
+      "interpretation": "positive means DStar is better than Ochiai",
+      "mean_dstar_minus_ochiai": -3.0359467697882093e-05,
+      "n": 376
+    },
+    "midrank_ceiling": {
+      "bootstrap_95ci": [
+        -0.0038267018080416276,
+        0.0033147919101706724
+      ],
+      "interpretation": "positive means DStar is better than Ochiai",
+      "mean_dstar_minus_ochiai": 0.00012706336788935368,
+      "n": 376
+    },
+    "full_tie_expanded": {
+      "bootstrap_95ci": [
+        -0.003482862099008671,
+        0.003050512845687547
+      ],
+      "interpretation": "positive means DStar is better than Ochiai",
+      "mean_dstar_minus_ochiai": 0.00015796316977071407,
+      "n": 376
+    }
+  }
+}

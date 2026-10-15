@@ -1,0 +1,6 @@
+seed,author_top1,author_top3,author_top5,author_top10,direct_evaluable,strict_evaluable,gained_evaluable,rank_better,top1_gain,top3_gain,top5_gain,top10_gain
+888,90,142,172,218,240,367,127,33,9,8,12,10
+1888,95,150,178,219,240,367,127,34,8,10,11,12
+2888,92,154,179,219,240,367,127,37,7,8,9,15
+3888,90,144,175,216,240,367,127,37,7,6,9,14
+4888,94,152,180,222,240,367,127,34,8,9,9,12
